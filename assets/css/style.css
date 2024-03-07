@@ -25,3 +25,11 @@
     margin-top: 2rem;
     text-align: center;
 }
+
+/*Features section*/
+
+#features h3{
+    text-align: center;
+    padding: 1rem;
+    padding-bottom: 1rem;
+}
