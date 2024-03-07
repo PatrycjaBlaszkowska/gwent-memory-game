@@ -1,0 +1,15 @@
+ body{
+    background-color: black;
+    color: #fafafa;
+ }
+
+/*Navigation section*/
+
+.navbar-dark .navbar-toggler {
+    border-color: #fafafa;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fafafa;
+    text-transform: uppercase;
+}
