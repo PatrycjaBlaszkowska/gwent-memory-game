@@ -17,14 +17,13 @@
 
 /*Home section*/
 
-#home-heading {
+.main-heading {
     padding-bottom: 3rem;
     text-transform: uppercase;
 }
 
 #home {
     margin-top: 2rem;
-    text-align: center;
 }
 
 /*Features section*/
@@ -39,4 +38,17 @@
 
 #button-section {
     text-transform: uppercase;
+}
+
+/*game heading/ info section*/
+
+#game-heading {
+    padding-top: 2rem;
+}
+
+.card {
+    background-color: bisque;
+    padding: 1rem;
+    height: 12.5rem;
+    width: 6.25rem;
 }
