@@ -8,11 +8,39 @@
         <link rel="stylesheet" href="./assets/css/style.css">
     </head>
 <body>
-    <h1 class="main-heading text-center">Gwent Memory Game</h1>
+    <h1 class="main-heading text-center" id="game-heading">Gwent Memory Game</h1>
     <section id="game-info">
         <h4 class="text-left">Time: <span id="timer">180000</span></h4>
         <h4 class="text-center">Score: <span id="score">0</span></h4>
         <h4 class="text-right">Flips: <span id="flips">0</span></h4>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row" id="first-row">
+              <div class="col-sm card"></div>
+              <div class="col-sm card"></div>
+              <div class="col-sm card"></div>
+              <div class="col-sm card"></div>
+            </div>
+            <div class="row" id="second-row">
+                <div class="col-sm card"></div>
+                <div class="col-sm card"></div>
+                <div class="col-sm card"></div>
+                <div class="col-sm card"></div>
+              </div>
+              <div class="row" id="third-row">
+                <div class="col-sm card"></div>
+                <div class="col-sm card"></div>
+                <div class="col-sm card"></div>
+                <div class="col-sm card"></div>
+              </div>
+              <div class="row" id="forth-row">
+                <div class="col-sm card"></div>
+                <div class="col-sm card"></div>
+                <div class="col-sm card"></div>
+                <div class="col-sm card"></div>
+              </div>
+          </div>
     </section>
     <!--Bootstrap scripts-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
