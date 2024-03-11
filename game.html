@@ -10,37 +10,101 @@
 <body>
     <h1 class="main-heading text-center" id="game-heading">Gwent Memory Game</h1>
     <section id="game-info">
-        <h4 class="text-left">Time: <span id="timer">180000</span></h4>
-        <h4 class="text-center">Score: <span id="score">0</span></h4>
-        <h4 class="text-right">Flips: <span id="flips">0</span></h4>
-    </section>
-    <section>
-        <div class="container">
-            <div class="row" id="first-row">
-              <div class="col-sm card"></div>
-              <div class="col-sm card"></div>
-              <div class="col-sm card"></div>
-              <div class="col-sm card"></div>
-            </div>
-            <div class="row" id="second-row">
-                <div class="col-sm card"></div>
-                <div class="col-sm card"></div>
-                <div class="col-sm card"></div>
-                <div class="col-sm card"></div>
-              </div>
-              <div class="row" id="third-row">
-                <div class="col-sm card"></div>
-                <div class="col-sm card"></div>
-                <div class="col-sm card"></div>
-                <div class="col-sm card"></div>
-              </div>
-              <div class="row" id="forth-row">
-                <div class="col-sm card"></div>
-                <div class="col-sm card"></div>
-                <div class="col-sm card"></div>
-                <div class="col-sm card"></div>
-              </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h4 class="text-left">Time: <span id="timer">180000</span></h4>
           </div>
+          <div class="col-lg-4">
+            <h4>Score: <span id="score">0</span></h4>
+          </div>
+          <div class="col-lg-4">
+            <h4 class="text-right">Flips: <span id="flips">0</span></h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="game-container">
+      <!--Frist row-->
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-yennefer.jpg" alt="Gwent card with Yennefer">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-geralt.jpg" alt="Gwent card with Geralt">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-eredin.jpg" alt="Gwent card with Eredin">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-ciri.jpg" alt="Gwent card with Ciri">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <!--Second row-->
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-eredin.jpg" alt="Gwent card with Eredin">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-lady-of-the-lake.jpg" alt="Gwent card with the lady of the lake">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-yennefer.jpg" alt="Gwent card with Yennefer">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-triss.jpg" alt="Gwent card with Triss">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <!--Third row-->
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-ciri.jpg" alt="Gwent card with Ciri">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-aguara.jpg" alt="Gwent card with Aguara">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-geralt.jpg" alt="Gwent card with Geralt">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-assire.jpg" alt="Gwent card with Assire">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <!--Forth row-->
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-triss.jpg" alt="Gwent card with Triss">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-lady-of-the-lake.jpg" alt="Gwent card with the lady of the lake">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-assire.jpg" alt="Gwent card with Assire">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
+
+      <div class="game-card">
+        <img class="front-face" src="./assets/images/gwent-aguara.jpg" alt="Gwent card with Aguara">
+        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+      </div>
     </section>
     <!--Bootstrap scripts-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
