@@ -1,8 +1,8 @@
 
 let selectors = {
-  timer: document.querySelector("#timer"),
-  score: document.querySelector("#score"),
-  flips: document.querySelector("#flips")
+  timer: document.getElementById("timer"),
+  score: document.getElementById("score"),
+  flips: document.getElementById("flips")
 }
 
 const cards = document.querySelectorAll('.game-card');
@@ -33,3 +33,6 @@ function flipCard() {
 }
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+
+
+module.exports = {selectors};
