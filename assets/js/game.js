@@ -13,8 +13,8 @@ let hasFlipped = false;
 
 /**
  * This function flips a card and 
- * change hasFlipped to either right or false
- * @returns card and calling check checkForMatch() function.
+ * change hasFlipped to either true or false
+ * and calls checkForMatch() function.
  */
 
 function flipCard() {
@@ -23,28 +23,41 @@ function flipCard() {
   if (!hasFlipped) {
     hasFlipped = true;
     firstCard = this;
-    return 
+    return; 
   }
 
   secondCard = this;
   hasFlipped = false;
 
   checkForMatch();
-};
+}
 
 /**
  * This function checks for a match 
- * and disable cards from fliping if true
- * or unflip them if false.
+ * and calls disableCards() if true
+ * or unflipCards() if false.
  */
 
-const checkForMatch = (firstCard, secondCard) => {
+const checkForMatch = () => {
   let isMatch = firstCard.dataset.card === secondCard.dataset.card;
   isMatch ? disableCards() : unflipCards();
   return;
-};
+}
 
 
+/*This function disable cards from fliping if they match*/
+
+const disableCards = () => {
+  firstCard.removeEventListener("click", flipCard);
+  secondCard.removeEventListener("click", flipCard);
+}
+
+const unflipCards = () => {
+  setTimeout(() => {
+    firstCard.classList.remove("flip");
+    secondCard.classList.remove("flip");
+  }, 1000);
+}
 
 /*event listeners*/
 

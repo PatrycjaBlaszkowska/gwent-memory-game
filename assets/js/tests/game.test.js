@@ -2,6 +2,7 @@
  * @jest-environment jsdom
  */
 
+const { describe } = require("yargs");
 const {selectors} = require("../game");
 
 beforeAll(() => {
@@ -23,3 +24,4 @@ describe("selectors object contains correct keys", () => {
         expect("flips" in selectors).toBe(true);
     });
 });
+
