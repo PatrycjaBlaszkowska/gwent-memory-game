@@ -2,8 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { describe } = require("yargs");
-const {selectors} = require("../game");
+const {flipCard} = require("../game");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -13,15 +12,11 @@ beforeAll(() => {
     document.close();
 });
 
-describe("selectors object contains correct keys", () => {
-    test("timer key exists", () => {
-        expect("timer" in selectors).toBe(true);
-    });
-    test("score key exists", () => {
-        expect("score" in selectors).toBe(true);
-    });
-    test("flips key exists", () => {
-        expect("flips" in selectors).toBe(true);
+describe("flipCard works correctly", () => {
+    test("hasFlipped should be changed to true", () => {
+        flipCard();
+        expect(hasFlipped).toBe(true);
     });
 });
+
 

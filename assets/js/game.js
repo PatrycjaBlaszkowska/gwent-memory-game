@@ -1,15 +1,13 @@
 
-let selectors = {
-  timer: document.getElementById("timer"),
-  score: document.getElementById("score"),
-  flips: document.getElementById("flips")
-}
+  let timer = document.getElementById("timer");
+  let score = document.getElementById("score");
+  let flips = document.getElementById("flips");
 
 const cards = document.querySelectorAll('.game-card');
 
 let firstCard, secondCard;
 let hasFlipped = false;
-
+let lockCards = false;
 
 /**
  * This function flips a card and 
@@ -18,6 +16,7 @@ let hasFlipped = false;
  */
 
 function flipCard() {
+  if (lockCards) return;
   this.classList.add('flip');
 
   if (!hasFlipped) {
@@ -30,6 +29,7 @@ function flipCard() {
   hasFlipped = false;
 
   checkForMatch();
+
 }
 
 /**
@@ -45,23 +45,29 @@ const checkForMatch = () => {
 }
 
 
-/*This function disable cards from fliping if they match*/
+/**This function disable cards from fliping if they match*/
 
 const disableCards = () => {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
 }
 
+/**This function unflips cards if they do not match*/
+
 const unflipCards = () => {
+  lockCards = true;
   setTimeout(() => {
     firstCard.classList.remove("flip");
     secondCard.classList.remove("flip");
+    lockCards = false;
   }, 1000);
 }
+
 
 /*event listeners*/
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
 /*exports*/
-module.exports = {selectors};
+
+module.exports = {flipCard};
