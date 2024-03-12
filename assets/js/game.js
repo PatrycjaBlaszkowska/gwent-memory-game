@@ -30,9 +30,25 @@ function flipCard() {
   hasFlipped = false;
 
   checkForMatch();
-}
+};
+
+/**
+ * This function checks for a match 
+ * and disable cards from fliping if true
+ * or unflip them if false.
+ */
+
+const checkForMatch = (firstCard, secondCard) => {
+  let isMatch = firstCard.dataset.card === secondCard.dataset.card;
+  isMatch ? disableCards() : unflipCards();
+  return;
+};
+
+
+
+/*event listeners*/
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
-
+/*exports*/
 module.exports = {selectors};
