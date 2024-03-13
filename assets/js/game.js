@@ -1,9 +1,6 @@
 
   let timer = document.getElementById("timer");
-  let score = document.getElementById("score");
-  let flips = document.getElementById("flips");
  
-
 const cards = document.querySelectorAll('.game-card');
 
 let firstCard, secondCard;
@@ -34,7 +31,12 @@ function flipCard() {
 
 }
 
+/**This function increases a 
+ * number of flips every time user 
+ * flips a pair of cards.*/
+
 const increaseFlips = () => {
+  let flips = document.getElementById("flips");
   let currentFlip = parseInt(flips.innerHTML);
   flips.innerHTML = currentFlip += 1;
 }
@@ -49,6 +51,13 @@ const checkForMatch = () => {
   let isMatch = firstCard.dataset.card === secondCard.dataset.card;
   isMatch ? disableCards() : unflipCards();
   return;
+}
+
+
+const increaseScore = () => {
+  let score = document.getElementById("score");
+  let currentScore = parseInt(score.innerHTML);
+  score.innerHTML = currentScore += 1;
 }
 
 
@@ -74,7 +83,7 @@ function unflipCards() {
 /*event listeners*/
 
 cards.forEach(card => card.addEventListener('click', flipCard));
-card.addEventListener('click', increaseFlips);
+
 /*exports*/
 
-module.exports = {increaseFlips};
+module.exports = {increaseFlips,increaseScore};

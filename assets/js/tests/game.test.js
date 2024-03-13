@@ -10,7 +10,7 @@ beforeAll(() => {
     document.close();
 });
 
-const {increaseFlips} = require("../game");
+const {increaseFlips, increaseScore} = require("../game");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -41,8 +41,32 @@ describe("increaseFlips works properly", () => {
         </div>
       </section>`
 
-        let flips = document.getElementById("flips");
-        flips.innerHTML = "1"
+        increaseFlips();
         expect(flips.innerHTML).toBe("1");
     });
+});
+
+
+describe("increaseScore works properly", () => {
+  test("score is increasing", () => {
+    document.body.innerHTML = `
+    <section id="game-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <h4 class="text-left">Time: <span id="timer">18000</span></h4>
+        </div>
+        <div class="col-lg-4">
+          <h4>Score: <span id="score">0</span></h4>
+        </div>
+        <div class="col-lg-4">
+          <h4 class="text-right">Flips: <span id="flips">0</span></h4>
+        </div>
+      </div>
+    </div>
+  </section>`
+
+    increaseScore();
+    expect(score.innerHTML).toBe("1");
+  });
 });
