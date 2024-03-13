@@ -49,7 +49,7 @@ const increaseFlips = () => {
 
 const checkForMatch = () => {
   let isMatch = firstCard.dataset.card === secondCard.dataset.card;
-  isMatch ? disableCards() : unflipCards();
+  isMatch ? disableCards() & increaseScore() : unflipCards();
   return;
 }
 
