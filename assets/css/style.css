@@ -63,7 +63,7 @@ body{
   }
   
   .game-card {
-    width: calc(25% - 10px);
+    width: 25%;
     height: calc(33.333% - 10px);
     position: relative;
     transform: scale(1);
@@ -93,4 +93,13 @@ body{
 
   .front-face {
     transform: rotateY(180deg);
+  }
+
+  @media only screen and (max-width: 922px) and (max-height: 900px) {
+   .game-container {
+    width: 350px;
+    height: 350px;
+    padding: 0;
+    justify-content: center;
+    }
   }
