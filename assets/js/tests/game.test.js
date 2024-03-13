@@ -10,7 +10,7 @@ beforeAll(() => {
     document.close();
 });
 
-const {flipCard,increaseFlips,unflipCard,lockCards} = require("../game");
+const {increaseFlips} = require("../game");
 
 beforeAll(() => {
     let fs = require("fs");

@@ -34,10 +34,9 @@ function flipCard() {
 
 }
 
-const increaseFlip = () => {
+const increaseFlips = () => {
   let currentFlip = parseInt(flips.innerHTML);
   flips.innerHTML = currentFlip += 1;
-  console.log(currentFlip);
 }
 
 /**
@@ -62,7 +61,7 @@ const disableCards = () => {
 
 /**This function unflips cards if they do not match*/
 
-function unflipCard() {
+function unflipCards() {
   lockCards = true;
   setTimeout(() => {
     firstCard.classList.remove("flip");
@@ -77,4 +76,4 @@ function unflipCard() {
 cards.forEach(card => card.addEventListener('click', flipCard));
 /*exports*/
 
-module.exports = {flipCard,increaseFlip,unflipCard};
+module.exports = {increaseFlips};
