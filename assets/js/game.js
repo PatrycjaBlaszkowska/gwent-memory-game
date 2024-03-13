@@ -30,7 +30,7 @@ function flipCard() {
   hasFlipped = false;
 
   checkForMatch();
-  increaseFlip();
+  increaseFlips();
 
 }
 
@@ -74,6 +74,7 @@ function unflipCards() {
 /*event listeners*/
 
 cards.forEach(card => card.addEventListener('click', flipCard));
+cards.addEventListener('click', increaseFlips);
 /*exports*/
 
 module.exports = {increaseFlips};
