@@ -12,7 +12,6 @@ let lockCards = false;
 
 function flipCard() {
   if (lockCards) return;
-  
   startCountdown();
 
   this.classList.add('flip');
@@ -93,14 +92,14 @@ const unflipCards = () => {
 
 
 function startCountdown() {
-  let timer = document.getElementById('timer');
-  let count = parseInt(timer.innerText);
-  let countdownTimer = setInterval(function() {
+  let timerElement = document.getElementById('timer');
+  let count = parseInt(timerElement.innerText);
+  let countdownTimerId = setInterval(function() {
       count--;
       timerElement.innerText = count;
       if (count === 0) {
-          clearInterval(countdownTimer);
-          alert("Time's up!");
+          clearInterval(countdownTimerId);
+          $('#gameOver').modal('show')
       }
   }, 1000);
 }
