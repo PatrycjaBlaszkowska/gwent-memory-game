@@ -13,7 +13,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-sm-12">
-            <h4>Time: <span id="timer">10</span></h4>
+            <h4>Time: <span id="timer">60</span></h4>
           </div>
           <div class="col-lg-4 col-sm-12">
             <h4>Score: <span id="score">0</span></h4>
@@ -110,19 +110,16 @@
     <!--modal-->
     <div class="modal" id="gameOver" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
-        <div class="modal-content" style="color: black; text-transform: uppercase;">
+        <div class="modal-content" style="color: black; text-transform: uppercase; font-weight: bold;">
           <div class="modal-header">
             <h5 class="modal-title">Game Over!</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
-          <div class="modal-body">
-            <p>You finished a game with <span id="points"></span>points!</p>
-          </div>
+          <div class="modal-body"></div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save changes</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <a href="game.html" class="btn btn-secondary">Reset</a>
           </div>
         </div>
       </div>

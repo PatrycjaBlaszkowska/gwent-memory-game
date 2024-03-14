@@ -63,8 +63,16 @@ const increaseScore = () => {
   let score = document.getElementById("score");
   let currentScore = parseInt(score.innerHTML);
   score.innerHTML = currentScore += 1;
-}
-
+  /*Winner's modal*/
+  if (score.innerHTML === "8") {
+    let winnerStr = `You have finished a game with a maximum score and won!`;
+    $(".modal-body").html(winnerStr); 
+    $('#gameOver').modal('show');
+  } else {
+    let totalStr = `You have finished a game with ${score.innerHTML} points!`;
+    $(".modal-body").html(totalStr); 
+  }
+  }
 
 /**
  * This function disable cards f
@@ -100,7 +108,7 @@ function startCountdown() {
       if (count === 0) {
           clearInterval(countdownTimerId);
           $('#gameOver').modal('show')
-      }
+      } 
   }, 1000);
 }
 
