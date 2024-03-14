@@ -1,6 +1,3 @@
-
-  let timer = document.getElementById("timer");
- 
 const cards = document.querySelectorAll('.game-card');
 
 let firstCard, secondCard;
@@ -15,6 +12,9 @@ let lockCards = false;
 
 function flipCard() {
   if (lockCards) return;
+  
+  startCountdown();
+
   this.classList.add('flip');
 
   if (!hasFlipped) {
@@ -31,9 +31,11 @@ function flipCard() {
 
 }
 
-/**This function increases a 
+/**
+ * This function increases a 
  * number of flips every time user 
- * flips a pair of cards.*/
+ * flips a pair of cards.
+ */
 
 const increaseFlips = () => {
   let flips = document.getElementById("flips");
@@ -53,6 +55,10 @@ const checkForMatch = () => {
   return;
 }
 
+/**
+ * This function increases a score 
+ * if match occurs. 
+ */
 
 const increaseScore = () => {
   let score = document.getElementById("score");
@@ -61,21 +67,41 @@ const increaseScore = () => {
 }
 
 
-/**This function disable cards from fliping if they match*/
+/**
+ * This function disable cards f
+ * rom fliping if they match.
+ */
 
 const disableCards = () => {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
 }
 
-/**This function unflips cards if they do not match*/
+/**
+ * This function unflips cards 
+ * if they do not match.
+ */
 
-function unflipCards() {
+const unflipCards = () => {
   lockCards = true;
   setTimeout(() => {
     firstCard.classList.remove("flip");
     secondCard.classList.remove("flip");
     lockCards = false;
+  }, 1000);
+}
+
+
+function startCountdown() {
+  let timer = document.getElementById('timer');
+  let count = parseInt(timer.innerText);
+  let countdownTimer = setInterval(function() {
+      count--;
+      timerElement.innerText = count;
+      if (count === 0) {
+          clearInterval(countdownTimer);
+          alert("Time's up!");
+      }
   }, 1000);
 }
 
