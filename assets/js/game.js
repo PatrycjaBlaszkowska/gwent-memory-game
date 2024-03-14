@@ -63,7 +63,6 @@ const increaseScore = () => {
   let score = document.getElementById("score");
   let currentScore = parseInt(score.innerHTML);
   score.innerHTML = currentScore += 1;
-
   message();
   }
 
@@ -111,8 +110,10 @@ function startCountdown() {
       timerElement.innerText = count;
       if (count === 0) {
           clearInterval(countdownTimerId);
-          $('#gameOver').modal('show')
-      } 
+          $('#gameOver').modal('show');
+      } else {
+        clearInterval(countdownTimerId);
+      }
   }, 1000);
 }
 
