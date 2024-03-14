@@ -31,6 +31,21 @@ function flipCard() {
 
 }
 
+
+const shuffleCards = () => {
+  const frontFaceCards = document.querySelectorAll('.game-card .front-face');
+
+  const frontFaceArray = Array.from(frontFaceCards);
+
+  frontFaceArray.forEach(card => {
+    const randomIndex = Math.floor(Math.random() * frontFaceArray.length);
+    const randomCard = frontFaceArray[randomIndex];
+    card.parentNode.parentNode.insertBefore(card.parentNode, randomCard.parentNode);
+  });
+};
+
+window.onload = shuffleCards;
+
 /**
  * This function increases a 
  * number of flips every time user 
