@@ -12,6 +12,7 @@ let lockCards = false;
 
 function flipCard() {
   if (lockCards) return;
+
   startCountdown();
 
   this.classList.add('flip');
@@ -64,9 +65,9 @@ const increaseScore = () => {
   let currentScore = parseInt(score.innerHTML);
   score.innerHTML = currentScore += 1;
   message();
-  }
+}
 
-  const message = () => {
+const message = () => {
     if (score.innerHTML === "8") {
       let winnerStr = `You have finished a game with a maximum score and won!`;
       $(".modal-body").html(winnerStr); 
@@ -75,7 +76,7 @@ const increaseScore = () => {
       let totalStr = `You have finished a game with ${score.innerHTML} points!`;
       $(".modal-body").html(totalStr); 
     }
-  }
+}
 
 /**
  * This function disable cards f
@@ -111,7 +112,7 @@ function startCountdown() {
       if (count === 0) {
           clearInterval(countdownTimerId);
           $('#gameOver').modal('show');
-      } else {
+      } else if (score.innerHTML === "8") {
         clearInterval(countdownTimerId);
       }
   }, 1000);
