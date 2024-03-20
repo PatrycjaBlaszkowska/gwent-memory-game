@@ -26,7 +26,7 @@ function flipCard() {
   if (!hasFlipped) {
     hasFlipped = true;
     firstCard = this;
-    return; 
+    return;
   }
 
   secondCard = this;
@@ -91,11 +91,11 @@ const increaseScore = () => {
 /*redirection to the game-over html page*/
 
 const GameOver = () => {
-  localStorage.setItem('currentScore', score);
-  
+
+  localStorage.setItem("currentScore", score);
+
   return window.location.assign("game-over.html");
 }
-
 
 /**
  * This function disable cards f
@@ -129,16 +129,13 @@ const unflipCards = () => {
 function startCountdown() {
   let timerElement = document.getElementById('timer');
   let count = parseInt(timerElement.innerText);
-  let countdownTimerId = setInterval(function() {
-      count--;
-      timerElement.innerText = count;
-      if (count === 0) {
-          clearInterval(countdownTimerId);
-          GameOver();
-      } else if (score === 8) {
-        clearInterval(countdownTimerId);
-        GameOver();
-      }
+  let countdownTimerId = setInterval(function () {
+    count--;
+    timerElement.innerText = count;
+    if (count === 0 || score === 8) {
+      clearInterval(countdownTimerId);
+      GameOver();
+    }
   }, 1000);
 }
 
@@ -150,7 +147,10 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 /*exports*/
 
-module.exports = {increaseFlips,increaseScore};
+module.exports = {
+  increaseFlips,
+  increaseScore
+};
 
 /*onload*/
 
