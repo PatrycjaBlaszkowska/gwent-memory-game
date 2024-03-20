@@ -175,8 +175,34 @@ footer li a i {
 
 /*game-Over section*/
 
-#GameOver h3 {
-  font-size: 10rem;
+#game-over h3 {
+  margin-top: 15rem;
+  padding-bottom: 2rem;
+  font-size: 5rem;
+}
+
+#game-over a {
+  margin-top: 3rem;
+}
+
+.score-form {
+  font-size: 1rem;
+}
+
+.score-form h5 {
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.score-form h4 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+
+#username {
+  padding-right: 0.3rem;
+  height: 2.4rem;
+  margin-bottom: 2rem;
 }
 
 /*media queries*/
