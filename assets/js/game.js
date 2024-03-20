@@ -1,8 +1,14 @@
+/*global variables*/
 const cards = document.querySelectorAll('.game-card');
+let scoreStr = document.querySelector("#score");
+let flipsStr = document.querySelector("#flips");
 
 let firstCard, secondCard;
 let hasFlipped = false;
 let lockCards = false;
+
+let score = 0;
+let flips = 0;
 
 /**
  * This function flips a card and 
@@ -31,6 +37,11 @@ function flipCard() {
 
 }
 
+/**
+ * This function shuffle
+ * cards everytime page
+ * is being loaded.
+ */
 
 const shuffleCards = () => {
   const frontFaceCards = document.querySelectorAll('.game-card .front-face');
@@ -44,8 +55,6 @@ const shuffleCards = () => {
   });
 };
 
-window.onload = shuffleCards;
-
 /**
  * This function increases a 
  * number of flips every time user 
@@ -53,9 +62,8 @@ window.onload = shuffleCards;
  */
 
 const increaseFlips = () => {
-  let flips = document.getElementById("flips");
-  let currentFlip = parseInt(flips.innerHTML);
-  flips.innerHTML = currentFlip += 1;
+  flips += 1;
+  flipsStr.innerText = flips;
 }
 
 /**
@@ -76,22 +84,18 @@ const checkForMatch = () => {
  */
 
 const increaseScore = () => {
-  let score = document.getElementById("score");
-  let currentScore = parseInt(score.innerHTML);
-  score.innerHTML = currentScore += 1;
-  message();
+  score += 1;
+  scoreStr.innerText = score;
 }
 
-const message = () => {
-    if (score.innerHTML === "8") {
-      let winnerStr = `You have finished a game with a maximum score and won!`;
-      $(".modal-body").html(winnerStr); 
-      $('#gameOver').modal('show');
-    } else {
-      let totalStr = `You have finished a game with ${score.innerHTML} points!`;
-      $(".modal-body").html(totalStr); 
-    }
+/*redirection to the game-over html page*/
+
+const GameOver = () => {
+  localStorage.setItem('currentScore', score);
+  
+  return window.location.assign("game-over.html");
 }
+
 
 /**
  * This function disable cards f
@@ -117,6 +121,10 @@ const unflipCards = () => {
   }, 1000);
 }
 
+/**
+ * This function counts down 
+ * to zero.
+ */
 
 function startCountdown() {
   let timerElement = document.getElementById('timer');
@@ -126,9 +134,10 @@ function startCountdown() {
       timerElement.innerText = count;
       if (count === 0) {
           clearInterval(countdownTimerId);
-          $('#gameOver').modal('show');
-      } else if (score.innerHTML === "8") {
+          GameOver();
+      } else if (score === 8) {
         clearInterval(countdownTimerId);
+        GameOver();
       }
   }, 1000);
 }
@@ -138,6 +147,11 @@ function startCountdown() {
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 
+
 /*exports*/
 
 module.exports = {increaseFlips,increaseScore};
+
+/*onload*/
+
+window.onload = shuffleCards;

@@ -1,141 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gwent Memory Game</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/css/style.css">
-    </head>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gwent Memory Game</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
 <body>
   <!--Game features section-->
-    <h1 class="main-heading text-center" id="game-heading">Gwent Memory Game</h1>
-    <section id="game-info">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <h4>Time: <span id="timer">60</span></h4>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <h4>Score: <span id="score">0</span></h4>
-          </div>
-          <div class="col-lg-4 col-sm-12">
-            <h4>Flips: <span id="flips">0</span></h4>
-          </div>
+  <h1 class="main-heading text-center" id="game-heading">Gwent Memory Game</h1>
+  <section id="game-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-sm-12">
+          <h4>Time: <span id="timer">60</span></h4>
         </div>
-      </div>
-    </section>
-    <!--Game container-->
-    <section class="game-container">
-      <!--Frist row-->
-      <div class="game-card" data-card="yennefer">
-        <img class="front-face" src="./assets/images/gwent-yennefer.jpg" alt="Gwent card with Yennefer">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="geralt">
-        <img class="front-face" src="./assets/images/gwent-geralt.jpg" alt="Gwent card with Geralt">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="eredin">
-        <img class="front-face" src="./assets/images/gwent-eredin.jpg" alt="Gwent card with Eredin">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="ciri">
-        <img class="front-face" src="./assets/images/gwent-ciri.jpg" alt="Gwent card with Ciri">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <!--Second row-->
-      <div class="game-card" data-card="eredin">
-        <img class="front-face" src="./assets/images/gwent-eredin.jpg" alt="Gwent card with Eredin">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="lady">
-        <img class="front-face" src="./assets/images/gwent-lady-of-the-lake.jpg" alt="Gwent card with the lady of the lake">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="yennefer">
-        <img class="front-face" src="./assets/images/gwent-yennefer.jpg" alt="Gwent card with Yennefer">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="triss">
-        <img class="front-face" src="./assets/images/gwent-triss.jpg" alt="Gwent card with Triss">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <!--Third row-->
-      <div class="game-card" data-card="ciri">
-        <img class="front-face" src="./assets/images/gwent-ciri.jpg" alt="Gwent card with Ciri">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="aguara">
-        <img class="front-face" src="./assets/images/gwent-aguara.jpg" alt="Gwent card with Aguara">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="geralt">
-        <img class="front-face" src="./assets/images/gwent-geralt.jpg" alt="Gwent card with Geralt">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-      
-      <div class="game-card" data-card="assire">
-        <img class="front-face" src="./assets/images/gwent-assire.jpg" alt="Gwent card with Assire">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <!--Forth row-->
-      <div class="game-card" data-card="triss">
-        <img class="front-face" src="./assets/images/gwent-triss.jpg" alt="Gwent card with Triss">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="lady"> 
-        <img class="front-face" src="./assets/images/gwent-lady-of-the-lake.jpg" alt="Gwent card with the lady of the lake">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="assire">
-        <img class="front-face" src="./assets/images/gwent-assire.jpg" alt="Gwent card with Assire">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-
-      <div class="game-card" data-card="aguara">
-        <img class="front-face" src="./assets/images/gwent-aguara.jpg" alt="Gwent card with Aguara">
-        <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
-      </div>
-    </section>
-    
-    <!--modal-->
-    <div class="modal" id="gameOver" tabindex="-1" role="dialog">
-      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content" style="color: black; text-transform: uppercase; font-weight: bold;">
-          <div class="modal-header">
-            <h5 class="modal-title">Game Over!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body"></div>
-          <div class="modal-footer">
-            <a href="game.html" class="btn btn-secondary">Reset</a>
-            <a href="index.html" class="btn btn-secondary">Home</a>
-          </div>
+        <div class="col-lg-4 col-sm-12">
+          <h4>Score: <span id="score">0</span></h4>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+          <h4>Flips: <span id="flips">0</span></h4>
         </div>
       </div>
     </div>
+  </section>
+  <!--Game container-->
+  <section class="game-container">
+    <!--Frist row-->
+    <div class="game-card" data-card="yennefer">
+      <img class="front-face" src="./assets/images/gwent-yennefer.jpg" alt="Gwent card with Yennefer">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
 
-    <!--Scripts-->
-    <script src="./assets/js/game.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <div class="game-card" data-card="geralt">
+      <img class="front-face" src="./assets/images/gwent-geralt.jpg" alt="Gwent card with Geralt">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="eredin">
+      <img class="front-face" src="./assets/images/gwent-eredin.jpg" alt="Gwent card with Eredin">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="ciri">
+      <img class="front-face" src="./assets/images/gwent-ciri.jpg" alt="Gwent card with Ciri">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <!--Second row-->
+    <div class="game-card" data-card="eredin">
+      <img class="front-face" src="./assets/images/gwent-eredin.jpg" alt="Gwent card with Eredin">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="lady">
+      <img class="front-face" src="./assets/images/gwent-lady-of-the-lake.jpg"
+        alt="Gwent card with the lady of the lake">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="yennefer">
+      <img class="front-face" src="./assets/images/gwent-yennefer.jpg" alt="Gwent card with Yennefer">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="triss">
+      <img class="front-face" src="./assets/images/gwent-triss.jpg" alt="Gwent card with Triss">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <!--Third row-->
+    <div class="game-card" data-card="ciri">
+      <img class="front-face" src="./assets/images/gwent-ciri.jpg" alt="Gwent card with Ciri">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="aguara">
+      <img class="front-face" src="./assets/images/gwent-aguara.jpg" alt="Gwent card with Aguara">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="geralt">
+      <img class="front-face" src="./assets/images/gwent-geralt.jpg" alt="Gwent card with Geralt">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="assire">
+      <img class="front-face" src="./assets/images/gwent-assire.jpg" alt="Gwent card with Assire">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <!--Forth row-->
+    <div class="game-card" data-card="triss">
+      <img class="front-face" src="./assets/images/gwent-triss.jpg" alt="Gwent card with Triss">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="lady">
+      <img class="front-face" src="./assets/images/gwent-lady-of-the-lake.jpg"
+        alt="Gwent card with the lady of the lake">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="assire">
+      <img class="front-face" src="./assets/images/gwent-assire.jpg" alt="Gwent card with Assire">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+
+    <div class="game-card" data-card="aguara">
+      <img class="front-face" src="./assets/images/gwent-aguara.jpg" alt="Gwent card with Aguara">
+      <img class="back-face" src="./assets/images/card-back-face.png" alt="Back of the game card">
+    </div>
+  </section>
+  <!--Scripts-->
+  <script src="./assets/js/game.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+  </script>
 
 </body>
+
 </html>

@@ -98,6 +98,28 @@ hr {
   font-weight: 600;
   font-size: 1.5rem;
 }
+
+/*footer*/
+
+footer {
+  text-align: center;
+  height: 100px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer li a {
+  color: #fafafa;
+}
+
+footer li a i {
+  font-size: 1.2rem;
+}
+
 /*game heading/ info section*/
 
 #game-heading {
@@ -151,25 +173,10 @@ hr {
     transform: rotateY(180deg);
   }
 
-/*footer*/
+/*game-Over section*/
 
-footer {
-  text-align: center;
-  height: 100px;
-}
-
-footer li {
-  display: inline-block;
-  padding: 1rem;
-  margin-top: 2rem;
-}
-
-footer li a {
-  color: #fafafa;
-}
-
-footer li a i {
-  font-size: 1.2rem;
+#GameOver h3 {
+  font-size: 10rem;
 }
 
 /*media queries*/
