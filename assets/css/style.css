@@ -9,6 +9,7 @@
 body{
     background-color: black;
     color: #fafafa;
+    font-family: "Roboto", sans-serif;
  }
 
 /*Navigation section*/
@@ -37,7 +38,7 @@ body{
 /*Features section*/
 
 #features {
-background: url("../images/wp1854866-the-witcher-3-wallpapers.jpg") center center / cover no-repeat;
+background: url("../images/features-background.jpg") center center / cover no-repeat;
 }
 
 .bkg {
@@ -130,6 +131,26 @@ hr {
     transform: rotateY(180deg);
   }
 
+/*footer*/
+
+footer {
+  text-align: center;
+  height: 100px;
+}
+
+footer li {
+  display: inline-block;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+footer li a {
+  color: #fafafa;
+}
+
+footer li a i {
+  font-size: 1.2rem;
+}
 
 /*media queries*/
 
@@ -139,7 +160,7 @@ hr {
   }
 
   #features p {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 }
 
