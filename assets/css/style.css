@@ -34,11 +34,16 @@ body{
 .main-heading {
     padding-bottom: 3rem;
     text-transform: uppercase;
-    font-family: Witcher;
 }
 
 #home {
     margin-top: 2rem;
+}
+
+/*Introduction section*/
+
+#introduction h2 {
+  margin-bottom: 1rem;
 }
 
 /*Features section*/
@@ -52,7 +57,7 @@ background: url("../images/features-background.jpg") center center / cover no-re
 }
 
 #features p {
-  margin-bottom: 1rem;
+  margin: 1rem 1rem 0 0;
 }
 
 hr {
@@ -76,6 +81,10 @@ hr {
 
 #instructions {
   margin-top: 2rem;
+}
+
+#instructions p {
+  padding: 0.5rem 0.5rem 0 0;
 }
 
 /*play now section*/
