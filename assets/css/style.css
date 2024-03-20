@@ -36,10 +36,22 @@ body{
 
 /*Features section*/
 
+#features {
+background: url("../images/wp1854866-the-witcher-3-wallpapers.jpg") center center / cover no-repeat;
+}
+
+.bkg {
+  background-color: rgba(0, 0, 0, .6);
+}
+
+#features p {
+  margin-bottom: 1rem;
+}
+
 hr {
   background-color: #fafafa;
   width: 45%;
-  margin: 0.2rem;
+  margin: 0.5rem;
   height: 2px;
 }
 
@@ -120,6 +132,16 @@ hr {
 
 
 /*media queries*/
+
+@media only screen and (max-width: 922px) {
+  hr {
+    display: none;
+  }
+
+  #features p {
+    margin-bottom: 1rem;
+  }
+}
 
   @media only screen and (max-width: 922px) and (max-height: 900px) {
    .game-container {
