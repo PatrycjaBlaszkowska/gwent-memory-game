@@ -93,6 +93,11 @@ hr {
     text-transform: uppercase;
 }
 
+.btn-xl {
+  width: 15rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
 /*game heading/ info section*/
 
 #game-heading {
