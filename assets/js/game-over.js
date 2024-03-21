@@ -10,6 +10,12 @@ const MAX_BEST_SCORES = 10;
 
 finalScore.innerText = currentScore;
 
+/**
+ * This function takes user input(name)
+ *  push and sort score to the local
+ * storage for the feature use.
+ */
+
 const saveScore = e => {
     e.preventDefault();
 
