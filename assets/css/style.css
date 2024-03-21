@@ -15,9 +15,14 @@ body{
     background-color: black;
     color: #fafafa;
     font-family: Witcher, "Roboto", sans-serif;
+    cursor: url("../fonts-and-cursors/cursor.png"), auto; /*credit: icons8*/
  }
 
-/*Navigation section*/
+:hover {
+  cursor: url("../fonts-and-cursors/cursor.png"), pointer;
+ }
+
+ /*Navigation section*/
 
 .navbar-dark .navbar-toggler {
     border-color: #fafafa;
