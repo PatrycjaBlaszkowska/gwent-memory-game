@@ -147,10 +147,12 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 /*exports*/
 
-module.exports = {
-  increaseFlips,
-  increaseScore
-};
+if (typeof module === 'object') {
+  module.exports = {
+    increaseFlips,
+    increaseScore
+  };
+}
 
 /*onload*/
 
