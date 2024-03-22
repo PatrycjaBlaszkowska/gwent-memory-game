@@ -22,6 +22,12 @@ body{
   cursor: url("../fonts-and-cursors/cursor.png"), pointer;
  }
 
+ /*css fixing number's readability*/
+
+.number {
+  font-family: "Roboto", sans-serif;
+ }
+
  /*Navigation section*/
 
 .navbar-dark .navbar-toggler {
