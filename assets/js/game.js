@@ -156,4 +156,4 @@ if (typeof module === 'object') {
 
 /*onload*/
 
-window.onload = shuffleCards;
+window.onload = shuffleCards();
