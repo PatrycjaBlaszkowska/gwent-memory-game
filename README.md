@@ -15,3 +15,28 @@ User can see leadearboard including best scores as well as save their own after 
 Game is over when player match all 8 pairs of cards or after 60 seconds.
 
 ### Thank you for visiting Gwent Memory Game!
+
+## UX - User Experience Design
+
+A user experience designer, Jesse James Garrett, introduced five UX design elements in his book The Elements of User Experience.
+In the book, he explains the steps of user experience projects and what UX designers should consider at each stage.
+This is where most of my planning process steps came from.
+
+The 5 planes of UX are as below:
+
+- The Strategy Plane
+- The Scope Plane
+- The Structure Plane
+- The Skeleton Plane
+- The Surface Plane
+
+## The Strategy Plane
+
+### Creator Goals
+
+- As a creator, I want webpage to be user friendly.
+- As a creator, I want webpage to be fully responsive.
+- As a creator, I want webpage to be functional.
+- As a creator, I want webpage to be easy to navigate.
+- As a creator, I want the purpose of my webpage to be clear.
+- As a creator, I want user to like the game and willing to play it again or/and share it with friends.
