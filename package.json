@@ -1,8 +1,14 @@
 {
+  "dependencies": {
+    "jquery": "^3.7.1"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
+  },
   "name": "gwent-memory-game",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "jest.config.js",
   "scripts": {
     "test": "jest"
   },
@@ -16,12 +22,5 @@
     "url": "https://github.com/PatrycjaBlaszkowska/gwent-memory-game/issues"
   },
   "homepage": "https://github.com/PatrycjaBlaszkowska/gwent-memory-game#readme",
-  "devDependencies": {
-    "jest": "^29.7.0",
-    "jest-environment-jsdom": "^29.7.0",
-    "jquery": "^3.7.1",
-    "jest": {
-      "setupFiles": ["./source/setup-jest.js"]
-    }
-  }
+  "description": ""
 }

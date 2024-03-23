@@ -16,6 +16,7 @@ let flips = 0;
  * and calls checkForMatch() function.
  */
 
+
 function flipCard() {
   if (lockCards) return;
 
@@ -36,6 +37,7 @@ function flipCard() {
   increaseFlips();
 
 }
+
 
 /**
  * This function shuffle
@@ -149,7 +151,9 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 if (typeof module === 'object') {
   module.exports = {
-    increaseFlips,
+    checkForMatch,
+    flipCard,
+    startCountdown,
     increaseScore
   };
 }
