@@ -16,6 +16,8 @@
     - [Colors](#colors)
     - [Fonts](#fonts)
     - [Images](#images)
+[The Skeleton Plane](#the-skeleton-plane)
+    -[Additonal page](#additional-page)
 
 ## INTRODUCTION 
 
@@ -150,3 +152,30 @@ Images for this project has been downloaded from:
 - [Wallpaper Cave](https://wallpapercave.com/)
 
 ##### *More information in credits section.*
+
+
+## The Skeleton Plane
+
+I made some significant changes to my project. I realised that I missed some important features. In my opinion, it was causing a poor user experience, so I decided to implement some changes.
+
+[Home page wireframes](./docs/wireframes/home.pdf)
+
+- I decided to change a original layout for a features section on desktop. Instead of placing all of them in one column I decided to split them and floated them to right and left. It helped me to create a visual impression of "two columns" and improve user experiance.
+
+- I decided to add a button linked to a leaderboard so user can access it before playing a actuall game.
+
+[Game page wireframes](./docs/wireframes/game.pdf)
+
+- I decided to add a button linked to a home page so user can navigate easily.
+- I decided to add a button linked to a leaderboard so user can access it while playing a game without a need of finishing it.
+
+[Leaderboard page wireframes](./docs/wireframes/leadearboard.pdf)
+
+- I decided to change a heading from "Leaderboard" to "Best Scores".
+- I decided to add a button linked to a home page so user can navigate easily.
+
+#### ADDITIONAL PAGE 
+
+After I finished my planning process, I did some additional research and decided to change "Game Over Modal" to the full HTML Gave Over page. This has been added later in the development process. Therefore, I didn't originally create a wireframe for this page.
+
+![Game Over screen](./docs/wireframes/game-over-screen.PNG)
