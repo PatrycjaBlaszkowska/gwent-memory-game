@@ -10,6 +10,7 @@
 - [UXD - User Experience Design](#uxd-–-user-experience-design)
 - [The Strategy Plane](#the-strategy-plane)
 - [Creator Goals](#creator-goals)
+- [User Stories](#user-stories) 
 
 ## INTRODUCTION 
 
@@ -48,3 +49,9 @@ The 5 planes of UX are as below:
 - As a creator, I want the purpose of my webpage to be clear.
 - As a creator, I want user to like the game and willing to play it again or/and share it with friends.
 
+### User stories
+
+- As a user, I want webpage to be easy to navigate.
+- As a user, I want the purpose of the website to be explained      straught away.
+- As a user, I want webpage to work on my mobile too.
+- As a user, I want game to work properly with no issues.
