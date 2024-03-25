@@ -23,9 +23,9 @@ Welcome to my second project,part of the Code Institute Full Stack Development C
 
 The Gwent Memory Game is a online card game inspired by Witcher's universe.
 
-User is able to navigate through website using fully responsive navigation bar and buttons. 
-User can see leadearboard including best scores as well as save their own after game is over.
-Game is over when player match all 8 pairs of cards or after 60 seconds.
+The user is able to navigate through the website using a fully responsive navigation bar and buttons.
+The user can see the leadboard, including the best scores, as well as save their own after the game is over.
+The game is over when the player matches all 8 pairs of cards, or after 60 seconds.
 
 ### Thank you for visiting Gwent Memory Game!
 
@@ -47,40 +47,42 @@ The 5 planes of UX are as below:
 
 ### Creator Goals
 
-- As a creator, I want webpage to be user friendly.
+- As a creator, I want webpage to be user-friendly.
 - As a creator, I want webpage to be fully responsive.
 - As a creator, I want webpage to be functional.
 - As a creator, I want webpage to be easy to navigate.
 - As a creator, I want the purpose of my webpage to be clear.
-- As a creator, I want user to like the game and willing to play it again or/and share it with friends.
+- As a creator, I want users to like the game and be willing to play it again or / and share it with friends.
 
 ### User stories
 
-- As a user, I want webpage to be easy to navigate.
-- As a user, I want the purpose of the website to be explained      straught away.
-- As a user, I want webpage to work on my mobile too.
-- As a user, I want game to work properly with no issues.
+- As a user, I want the webpage to be easy to navigate.
+- As a user, I want the purpose of the website to be explained straight away.
+- As a user, I want the webpage to work on my mobile too.
+- As a user, I want the game to work properly with no issues.
 
 **User stories are based on online research and my relatives experiance.**
 
 ## The Scope Plane
 
-Planning process helped me to decide which features can be implemented withing a given deadline and which one's needs to be postponed. I decided to implement the ones covering my user stories first and add the remaining features later.
+The planning process helped me decide which features could be implemented within a given deadline and which ones needed to be postponed. I decided to implement the ones covering my user stories first and add the remaining features later.
+
 
 #### Features implemented upon webpage release:
 
-- Home page with an introduction, game features and game rules.
+- Home page with an introduction, game features, and game rules.
 - Functional navigation bar, allowing users to navigate to different pages.
-- Game page including actual game.
+- Game page, including the actual game.
 - Leaderboard page to save and store best scores.
-- "Home" button on every page to ensure user can navigate easily.
+- "Home" button on every page to ensure users can navigate easily.
 - Footer with social media links.
 
 #### Fatures planned to implement later:
 
-- Option for a user to create an account so he can keep his best scores and access on different browser/device.
+- Option for a user to create an account so he can keep his best scores and access it on a different browser or device.
 - Option for a user to share his score on social media.
 - Multiplayer mode, so players can compete with each other online. 
+
 
 *Above decisions have been made based on below table.*
 
@@ -130,13 +132,14 @@ Planning process helped me to decide which features can be implemented withing a
 
 ### Fonts
 
-#### As my main font I used custom "The Witcher Font" to improve user experiance and make him feel more like in the "The Witcher 3" video game. 
+#### As my main font, I used custom "The Witcher Font" to improve the user experience and make him feel more like in the "The Witcher 3" video game. 
+
 
 *More about this font in credits section*
 
 #### Roboto :
 
-I used "Roboto" Google Font as a callback font in case my custom one won't load. I decided to use it as it's one of the most popular and user-friendly fonts. 
+I used "Roboto" Google Font as a callback font in case my custom one wouldn't load. I decided to use it because it's one of the most popular and user-friendly fonts. 
 
 ### Images
 
