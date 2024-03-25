@@ -106,27 +106,27 @@ Planning process helped me to decide which features can be implemented withing a
 - Text
 - Navigation bar
 - Icons (social links)
-- Horizontal break lines (<hr> HTML tags)
+- Horizontal break lines (hr HTML tags)
 
-![#FAFAFA HEX COLOR](./docs/images/#FAFAFA.PNG)
+![#FAFAFA Hex Color](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/docs/images/%23FAFAFA.PNG)
 
 #000 :
 
 - Background color
 
-![#000 Hex Color](./docs/images/#000.PNG)
+![#000 Hex Color](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/docs/images/%23000.PNG)
 
 #E2E6EA : 
 
 - Buttons background color
 
-![#E2E6EA HEX COLOR](./docs/images/#E2E6EA.PNG)
+![#E2E6EA HEX COLOR](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/docs/images/%23E2E6EA.PNG)
 
 #DAE0E5 :
 
 - Buttons border color
 
-![#DAE0E5 HEX COLOR](./docs/images/#DAE0E5.PNG)
+![#DAE0E5 HEX COLOR](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/docs/images/%23DAE0E5.PNG)
 
 ### Fonts
 
