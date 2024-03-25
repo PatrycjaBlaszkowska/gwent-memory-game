@@ -9,9 +9,13 @@
 - [Intrdocution](#introduction)
 - [UXD - User Experience Design](#uxd-–-user-experience-design)
 - [The Strategy Plane](#the-strategy-plane)
-- [Creator Goals](#creator-goals)
-- [User Stories](#user-stories) 
+    - [Creator Goals](#creator-goals)
+    - [User Stories](#user-stories) 
 - [The Scope Plane](#the-scope-plane)
+- [The Structure Plane](#the-structure-plane)
+    - [Colors](#colors)
+    - [Fonts](#fonts)
+    - [Images](#images)
 
 ## INTRODUCTION 
 
@@ -92,3 +96,54 @@ Planning process helped me to decide which features can be implemented withing a
 |Score share    | 3             | 3             |
 |Leadearboard   | 5             | 4             |
 |Create account | 3             | 3             |
+
+## The Structure Plane
+
+### Colors
+
+#FAFAFA :
+
+- Text
+- Navigation bar
+- Icons (social links)
+- Horizontal break lines (<hr> HTML tags)
+
+![#FAFAFA HEX COLOR](./docs/images/#FAFAFA.PNG)
+
+#000 :
+
+- Background color
+
+![#000 Hex Color](./docs/images/#000.PNG)
+
+#E2E6EA : 
+
+- Buttons background color
+
+![#E2E6EA HEX COLOR](./docs/images/#E2E6EA.PNG)
+
+#DAE0E5 :
+
+- Buttons border color
+
+![#DAE0E5 HEX COLOR](./docs/images/#DAE0E5.PNG)
+
+### Fonts
+
+#### As my main font I used custom "The Witcher Font" to improve user experiance and make him feel more like in the "The Witcher 3" video game. 
+
+*More about this font in credits section*
+
+#### Roboto :
+
+I used "Roboto" Google Font as a callback font in case my custom one won't load. I decided to use it as it's one of the most popular and user-friendly fonts. 
+
+### Images
+
+Images for this project has been downloaded from:
+
+- [Gwent One](https://gwent.one/)
+- [Creative Uncut](https://www.creativeuncut.com/)
+- [Wallpaper Cave](https://wallpapercave.com/)
+
+##### *More information in credits section.*

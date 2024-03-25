@@ -12,7 +12,7 @@
   
 
 body{
-    background-color: black;
+    background-color: #000;
     color: #fafafa;
     font-family: Witcher, "Roboto", sans-serif;
     cursor: url("../fonts-and-cursors/cursor.png"), auto; /*credit: icons8*/
