@@ -11,6 +11,7 @@
 - [The Strategy Plane](#the-strategy-plane)
 - [Creator Goals](#creator-goals)
 - [User Stories](#user-stories) 
+- [The Scope Plane](#the-scope-plane)
 
 ## INTRODUCTION 
 
@@ -55,3 +56,39 @@ The 5 planes of UX are as below:
 - As a user, I want the purpose of the website to be explained      straught away.
 - As a user, I want webpage to work on my mobile too.
 - As a user, I want game to work properly with no issues.
+
+**User stories are based on online research and my relatives experiance.**
+
+## The Scope Plane
+
+Planning process helped me to decide which features can be implemented withing a given deadline and which one's needs to be postponed. I decided to implement the ones covering my user stories first and add the remaining features later.
+
+#### Features implemented upon webpage release:
+
+- Home page with an introduction, game features and game rules.
+- Functional navigation bar, allowing users to navigate to different pages.
+- Game page including actual game.
+- Leaderboard page to save and store best scores.
+- "Home" button on every page to ensure user can navigate easily.
+- Footer with social media links.
+
+#### Fatures planned to implement later:
+
+- Option for a user to create an account so he can keep his best scores and access on different browser/device.
+- Option for a user to share his score on social media.
+- Multiplayer mode, so players can compete with each other online. 
+
+*Above decisions have been made based on below table.*
+
+| Feature       | Feasibility   | Importance    |
+| ------------- |:-------------:|:-------------:|
+|Navigation     | 5             | 5             |
+|Introduction   | 5             | 5             |
+|Game Features  | 5             | 5             |
+|Instructions   | 5             | 5             |
+|Game page      | 5             | 5             |
+|Social media   | 5             | 4             |
+|Multiplayer mod| 3             | 3             |
+|Score share    | 3             | 3             |
+|Leadearboard   | 5             | 4             |
+|Create account | 3             | 3             |
