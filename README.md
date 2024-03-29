@@ -16,8 +16,10 @@
     - [Colors](#colors)
     - [Fonts](#fonts)
     - [Images](#images)
-[The Skeleton Plane](#the-skeleton-plane)
-    -[Additonal page](#additional-page)
+- [The Skeleton Plane](#the-skeleton-plane)
+    - [Additonal page](#additional-page)
+- [The Surface Plane](#the-surface-plane)
+    - [Navbar](#navigation-bar)
 
 ## INTRODUCTION 
 
@@ -179,3 +181,104 @@ I made some significant changes to my project. I realised that I missed some imp
 After I finished my planning process, I did some additional research and decided to change "Game Over Modal" to the full HTML Gave Over page. This has been added later in the development process. Therefore, I didn't originally create a wireframe for this page.
 
 ![Game Over screen](./docs/wireframes/game-over-screen.PNG)
+
+## The Surface Plane
+
+### Features present across the project :
+
+### Navigation bar :
+
+- Navabar is present on home page and fully responsive across all resolutions.
+- Navbar toggles to a hamburger menu on mobile devices.
+- User can navigate to all additional pages easily. 
+
+**Desktop** :
+
+![Navbar - desktop view](./docs/images/navbar-desktop.PNG)
+
+**Mobile**
+
+![Navbar - mobile view](./docs/images/navbar-mobile.PNG)
+
+### Footer :
+
+- Footer is present on the home page and fully responsive across all resolutions.
+- Footer contains social media links that are opening in a new tab.
+
+![Footer](./docs/images/footer.PNG)
+
+### "Navigation" buttons :
+
+There are different types of buttons present across all pages, so the user can navigate easily.
+Buttons provide a better user experience than the navbar when playing an actual game.
+All buttons are fully responsive and working with no issues.
+
+**Home button**
+
+- Present on the game page so the user can go back without needing to finish a game.
+- Present on the leaderboard page so the user can go back to the home page after checking the best scores.
+- Present on the game-over page so the user can go back to the home page without saving a score.
+
+![Home button](./docs/images/home-button.PNG)
+
+**Leaderboard button**
+
+- Present on the home page so the user can see the leaderboard before playing a game.
+- Present on the game-over page so the user can see the leaderboard without saving a score.
+
+![Leaderboard button](./docs/images/leaderboard-button.PNG)
+
+**Play button**
+
+- Present on the home page, so the user can start a game from the bottom of the page too. 
+
+![Play button](./docs/images/play-button.PNG)
+
+**Reset button**
+
+- Present on the game page so the user can reset a game before finishing it.
+- Present on the game over screen so the user can play again without saving a score. 
+
+### Introduction section : 
+
+- The introduction section shows the purpose of the website right away, so the user can determine if this game is suitable for him within the first few minutes.
+
+![Introduction](./docs/images/introduction-home-page.PNG)
+
+### Game features section :
+
+- The game features section shows what the game has to offer and all the advantages of playing it.
+
+![Game features](./docs/images/game-features.PNG)
+
+### Instructions section :
+
+- The instructions section instructs the player on how to play the game.
+
+![Instructions](./docs/images/instructions.PNG)
+
+### Game info section :
+
+- The game info section includes a timer, score, and flips counter.
+
+![Game section info](./docs/images/game-info.PNG)
+
+### Game section :
+
+- The game section includes fully functioning game board of 16 cards.
+- The player have 60 seconds to match as many pairs of cards as possible.
+
+![Game board](./docs/images/game-board.PNG)
+
+### Game over screem :
+
+- The game-over screen is presented to the player either after 60 seconds or if the player manages to match 8 pairs of cards before time runs out.
+- The game-over screen allows player to save his/hers name to the leaderboard or navigate back.
+
+![Game over](./docs/wireframes/game-over-screen.PNG)
+
+### Best scores section :
+
+- The best scores section allows the player to see scores he/she saved. 
+
+![Best scores](./docs/images/best-scores.PNG)
