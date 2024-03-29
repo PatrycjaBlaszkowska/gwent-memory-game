@@ -7,7 +7,7 @@
 ## **Contents**
 
 - [Intrdocution](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/README.md#introduction)
-- [UXD - User Experience Design](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/README.md#uxd-%E2%80%93-user-experience-design)
+- [UXD - User Experience Design](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/README.md#uxd--user-experience-design)
 - [The Strategy Plane](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/README.md#the-strategy-plane)
     - [Creator Goals](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/README.md#creator-goals)
     - [User Stories](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/README.md#user-stories) 
