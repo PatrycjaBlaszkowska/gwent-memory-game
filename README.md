@@ -20,6 +20,15 @@
     - [Additonal page](#additional-page)
 - [The Surface Plane](#the-surface-plane)
     - [Navbar](#navigation-bar)
+    - [Footer](#footer)
+    - [Navigation buttons](#navigation-buttons)
+    - [Introduction](#introduction-section)
+    - [Game features](#game-features-section)
+    - [Instructions](#instructions-section)
+    - [Game Info](#game-info-section)
+    - [Game](#game-section)
+    - [Game-over](#game-over-screen)
+    - [Best Scores](#best-scores-section)
 
 ## INTRODUCTION 
 
@@ -270,7 +279,7 @@ All buttons are fully responsive and working with no issues.
 
 ![Game board](./docs/images/game-board.PNG)
 
-### Game over screem :
+### Game over screen :
 
 - The game-over screen is presented to the player either after 60 seconds or if the player manages to match 8 pairs of cards before time runs out.
 - The game-over screen allows player to save his/hers name to the leaderboard or navigate back.
