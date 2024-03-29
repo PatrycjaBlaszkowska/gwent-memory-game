@@ -29,6 +29,7 @@
     - [Game](#game-section)
     - [Game-over](#game-over-screen)
     - [Best Scores](#best-scores-section)
+- [Technologies](#technologies-used)
 
 ## INTRODUCTION 
 
@@ -291,3 +292,19 @@ All buttons are fully responsive and working with no issues.
 - The best scores section allows the player to see scores he/she saved. 
 
 ![Best scores](./docs/images/best-scores.PNG)
+
+## Technologies Used :
+
+- HTML
+- CSS
+- JavaScript
+- jQuery 
+- Gitpod
+- Github
+- Git
+- Bootstrap 4.6
+- FontAwsome
+- Balsamiq
+- Google Fonts
+- QuillBot
+- Google Developer Tools
