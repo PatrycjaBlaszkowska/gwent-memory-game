@@ -30,6 +30,7 @@
     - [Game-over](#game-over-screen)
     - [Best Scores](#best-scores-section)
 - [Technologies](#technologies-used)
+- [Testing](#testing)
 
 ## INTRODUCTION 
 
@@ -355,4 +356,33 @@ All buttons are fully responsive and working with no issues.
 
 - Leaderboard (best scores) :
     - Saved scores are successfully stored and displayed on the leaderboard.
-    
+
+
+### Devices used during testing:
+
+- Desktop Computer
+- Iphone 13
+- Lenovo Tab M10 Plus
+
+### Chrome Dev Tools
+
+Chrome dev tools was used throughout the development of the project to test responsiveness. 
+Responsiveness was tested using Dev Tools to emulate the following devices :
+
+- Iphone SE
+- Iphone XR
+- Iphone 12 Pro
+- Iphone 14 Pro Max
+- Pixel 7
+- Samsung Galaxy S8+
+- Samsung Galaxy S20 Ultra
+- iPad Mini
+- iPad Air
+- iPad Pro
+- Surface Pro 7
+- Surface Duo
+- Galaxy Fold
+- Asus Zenbook Fold
+- Samsung Galaxy A51/71
+- Nest Hub
+- Nest Hub Max
