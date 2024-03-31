@@ -31,6 +31,11 @@
     - [Best Scores](#best-scores-section)
 - [Technologies](#technologies-used)
 - [Testing](#testing)
+    - [Manual Testing](#manual-testing)
+    - [Devices](#devices-used-during-testing)
+    - [Chtome Dev Tools](#chrome-dev-tools)
+    - [Browser](#browser-testing)
+    - [Validation](#validation)
 
 ## INTRODUCTION 
 
@@ -398,3 +403,7 @@ However, during testing process below browsers have been used :
 - Mozilla Firefox
 - Opera
 - Safari
+
+### Validation
+
+[HTML validator](https://validator.w3.org/)
