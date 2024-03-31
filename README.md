@@ -386,3 +386,15 @@ Responsiveness was tested using Dev Tools to emulate the following devices :
 - Samsung Galaxy A51/71
 - Nest Hub
 - Nest Hub Max
+
+
+### Browser Testing
+
+During development, webpage was mainly tested on Google Chrome. 
+However, during testing process below browsers have been used :
+
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
+- Opera
+- Safari
