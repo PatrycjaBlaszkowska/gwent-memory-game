@@ -67,7 +67,7 @@ The 5 planes of UX are as below:
 
 ## The Strategy Plane
 
-### Creator Goals
+### Creator Goals :
 
 - As a creator, I want webpage to be user-friendly.
 - As a creator, I want webpage to be fully responsive.
@@ -76,7 +76,7 @@ The 5 planes of UX are as below:
 - As a creator, I want the purpose of my webpage to be clear.
 - As a creator, I want users to like the game and be willing to play it again or / and share it with friends.
 
-### User stories
+### User stories :
 
 - As a user, I want the webpage to be easy to navigate.
 - As a user, I want the purpose of the website to be explained straight away.
@@ -90,7 +90,7 @@ The 5 planes of UX are as below:
 The planning process helped me decide which features could be implemented within a given deadline and which ones needed to be postponed. I decided to implement the ones covering my user stories first and add the remaining features later.
 
 
-#### Features implemented upon webpage release:
+#### Features implemented upon webpage release :
 
 - Home page with an introduction, game features, and game rules.
 - Functional navigation bar, allowing users to navigate to different pages.
@@ -99,7 +99,7 @@ The planning process helped me decide which features could be implemented within
 - "Home" button on every page to ensure users can navigate easily.
 - Footer with social media links.
 
-#### Fatures planned to implement later:
+#### Fatures planned to implement later :
 
 - Option for a user to create an account so he can keep his best scores and access it on a different browser or device.
 - Option for a user to share his score on social media.
@@ -123,7 +123,7 @@ The planning process helped me decide which features could be implemented within
 
 ## The Structure Plane
 
-### Colors
+### Colors :
 
 #FAFAFA :
 
@@ -152,7 +152,7 @@ The planning process helped me decide which features could be implemented within
 
 ![#DAE0E5 HEX COLOR](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/docs/images/%23DAE0E5.PNG)
 
-### Fonts
+### Fonts :
 
 #### As my main font, I used custom "The Witcher Font" to improve the user experience and make him feel more like in the "The Witcher 3" video game. 
 
@@ -163,7 +163,7 @@ The planning process helped me decide which features could be implemented within
 
 I used "Roboto" Google Font as a callback font in case my custom one wouldn't load. I decided to use it because it's one of the most popular and user-friendly fonts. 
 
-### Images
+### Images :
 
 Images for this project has been downloaded from:
 
@@ -303,7 +303,7 @@ All buttons are fully responsive and working with no issues.
 
 ![Best scores](./docs/images/best-scores.PNG)
 
-## Technologies Used :
+## Technologies Used 
 
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
@@ -320,6 +320,8 @@ All buttons are fully responsive and working with no issues.
 - [Google Developer Tools](https://developer.chrome.com/docs/devtools/)
 
 ## Testing
+
+### User stories :
 
 [User stories testing](./docs/testing/testing.md)
 
@@ -365,13 +367,13 @@ All buttons are fully responsive and working with no issues.
     - Saved scores are successfully stored and displayed on the leaderboard.
 
 
-### Devices used during testing:
+### Devices used during testing :
 
 - Desktop Computer
 - Iphone 13
 - Lenovo Tab M10 Plus
 
-### Chrome Dev Tools
+### Chrome Dev Tools :
 
 Chrome dev tools was used throughout the development of the project to test responsiveness. 
 Responsiveness was tested using Dev Tools to emulate the following devices :
@@ -395,7 +397,7 @@ Responsiveness was tested using Dev Tools to emulate the following devices :
 - Nest Hub Max
 
 
-### Browser Testing
+### Browser Testing :
 
 During development, webpage was mainly tested on Google Chrome. 
 However, during testing process below browsers have been used :
@@ -406,7 +408,7 @@ However, during testing process below browsers have been used :
 - Opera
 - Safari
 
-### Validation
+### Validation :
 
 [HTML validator](https://validator.w3.org/)
 
@@ -422,9 +424,32 @@ However, during testing process below browsers have been used :
 
 ![CSS validator results](./docs/images/css-validation.PNG)
 
-### Bugs and Fixes
+### Bugs and Fixes :
 
 - The custom font made 0 and 8 look the same when displaying points, flips, and time left:
     - Decided to change a font to Roboto for all numbers to improve user experiance and avoid confusion.
 
 ## Deployment 
+
+The master branch of this repository is the most current version and has been used for the deployed version of the site.
+The Code Institiue student template was used to create this project.
+
+[Code Institute Template for Gitpod](https://github.com/Code-Institute-Org/gitpod-full-template)
+
+1. Click **Use This Template** button.
+2. Give your repository a name, and description.
+3. Open [Gitpod EDI](https://www.gitpod.io/) and log into your account.
+4. Click **New Workspace** button.
+5. Create a workspace from your project repository by creating a clone.
+
+### Creating a clone
+
+1. From the repository, click **Code**.
+2. In the **Clone >> HTTPS** section, copy the clone URL for the repository.
+3. Paste a link into the designated area on the Gitpod.
+
+### Forking
+
+1. From the repository, click **Fork**.
+2. Give your repository a name.
+3. Click **Create fork**.
