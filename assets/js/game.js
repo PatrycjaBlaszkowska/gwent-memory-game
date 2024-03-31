@@ -154,7 +154,8 @@ if (typeof module === 'object') {
     checkForMatch,
     flipCard,
     startCountdown,
-    increaseScore
+    increaseScore,
+    unflipCards
   };
 }
 

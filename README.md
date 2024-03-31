@@ -464,7 +464,9 @@ The Code Institiue student template was used to create this project.
 - Wallpapercave
 
 [Front card images](https://www.creativeuncut.com/art_gwent-the-witcher-card-game_a.html)
+
 [Back card image](https://gwent.one/image/assets/cardback/default-monster.png)
+
 [Features section background](https://wallpapercave.com/w/wp1854866)
 
 ### Code :

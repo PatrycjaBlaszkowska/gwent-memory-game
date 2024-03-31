@@ -219,7 +219,7 @@ footer li a i {
 
 /*leaderboard section*/
 
-#leaderboard-heading{
+.leaderboard-heading{
   margin-top: 2rem;
   padding-bottom: 3rem;
 }

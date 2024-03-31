@@ -22,5 +22,11 @@
     "url": "https://github.com/PatrycjaBlaszkowska/gwent-memory-game/issues"
   },
   "homepage": "https://github.com/PatrycjaBlaszkowska/gwent-memory-game#readme",
-  "description": ""
+  "description": "[Link to a live site](https://patrycjablaszkowska.github.io/gwent-memory-game/)",
+  "directories": {
+    "doc": "docs"
+  },
+  "keywords": [
+    "jest"
+  ]
 }
