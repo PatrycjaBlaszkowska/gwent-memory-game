@@ -36,6 +36,8 @@
     - [Chtome Dev Tools](#chrome-dev-tools)
     - [Browser](#browser-testing)
     - [Validation](#validation)
+    - [Bugs](#bugs-and-fixes)
+- [Deployment](#deployment)
 
 ## INTRODUCTION 
 
@@ -419,3 +421,10 @@ However, during testing process below browsers have been used :
 - 0 warnings
 
 ![CSS validator results](./docs/images/css-validation.PNG)
+
+### Bugs and Fixes
+
+- The custom font made 0 and 8 look the same when displaying points, flips, and time left:
+    - Decided to change a font to Roboto for all numbers to improve user experiance and avoid confusion.
+
+## Deployment 
