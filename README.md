@@ -38,6 +38,7 @@
     - [Validation](#validation)
     - [Bugs](#bugs-and-fixes)
 - [Deployment](#deployment)
+- [Credits](#credits)
 
 ## INTRODUCTION 
 
@@ -442,14 +443,42 @@ The Code Institiue student template was used to create this project.
 4. Click **New Workspace** button.
 5. Create a workspace from your project repository by creating a clone.
 
-### Creating a clone
+### Creating a clone :
 
 1. From the repository, click **Code**.
 2. In the **Clone >> HTTPS** section, copy the clone URL for the repository.
 3. Paste a link into the designated area on the Gitpod.
 
-### Forking
+### Forking :
 
 1. From the repository, click **Fork**.
 2. Give your repository a name.
 3. Click **Create fork**.
+
+## Credits
+
+### Images :
+
+- Creativeuncut
+- Gwent.one 
+- Wallpapercave
+
+[Front card images](https://www.creativeuncut.com/art_gwent-the-witcher-card-game_a.html)
+[Back card image](https://gwent.one/image/assets/cardback/default-monster.png)
+[Features section background](https://wallpapercave.com/w/wp1854866)
+
+### Code :
+
+- [Bootstrap version 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/) :
+    - Used for navigation bar, grid system, buttons.
+
+- [Stackoverflow](https://stackoverflow.com/questions/56283681/js-memory-card-game-how-to-prevent-user-flipping-more-then-2-cards-at-the-same)
+    - Inspiration on how to disable the game board after two cards get flipped.
+
+- [Font bolt](https://www.fontbolt.com/font/the-witcher-font/?fbclid=IwAR3p6DrAHJU7INE4L-FRND1MCXrjkKPkGXOEnm39aJ24m8h8juzJ6sH1zHQ_aem_AbCVXPy7sqCR_dROUKkk3YeNAtkgsxyMaFCHrtr9DdZZ692yBlyxFewUfKSeRKxtM4g6bnP5eDzEgQk07y_Z9-d5)
+    - Custom witcher font.
+
+- [Youtube - code along tutorial](https://www.youtube.com/watch?v=jfOv18lCMmw)
+    - Code along tutorial on how to use local storage.
+
+## Thank you for reading this documentation! 
