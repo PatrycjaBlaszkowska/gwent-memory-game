@@ -297,20 +297,62 @@ All buttons are fully responsive and working with no issues.
 
 ## Technologies Used :
 
-- HTML
-- CSS
-- JavaScript
-- jQuery 
-- Gitpod
-- Github
-- Git
-- Bootstrap 4.6
-- FontAwsome
-- Balsamiq
-- Google Fonts
-- QuillBot
-- Google Developer Tools
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+- [jQuery](https://jquery.com/)
+- [Gitpod](https://www.gitpod.io/)
+- [Github](https://github.com/)
+- [Git]((https://git-scm.com/))
+- [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
+- [FontAwsome]((https://fontawesome.com/))
+- [Balsamiq]((https://balsamiq.com/wireframes/?gad_source=1&gclid=Cj0KCQiAy9msBhD0ARIsANbk0A_UrgDIhg_KSUHNCOUn-D9DiHl_9Z1dwScGRuI4JET1bnKbQkqwSb8aArFqEALw_wcB))
+- [Google Fonts](https://fonts.google.com/)
+- [QuillBot](https://quillbot.com/)
+- [Google Developer Tools](https://developer.chrome.com/docs/devtools/)
 
 ## Testing
 
 [User stories testing](./docs/testing/testing.md)
+
+### Manual Testing :
+
+- Navigation bar :
+    - Navigation bar is fully responsive on large/medium/small resolutions.
+    - Navigation bar toggles to a hamburger menu on mobile devices and stays fully responsive.
+    - All links to pages are working properly.
+
+- Footer :
+    - Footer is fully responsive on large/medium/small resolutions.
+    - Social media links are working and opening in a new tab.
+
+- "Navigation" buttons :
+    - All buttons across webpage are working properly.
+    - Buttons are resposive and have a proper size on smaller devices.
+
+- Grid system(Bootstrap) :
+    - Grid system is working as intended successfully changing amount of collumns on smaller devices making website fully responsive. 
+
+- Game info section :
+    - The timer starst running only once user clicks on the first card.
+    - The flip counter is updated after each pair of cards gets flipped.
+    - The score is updated once the player manages to get a matching pair of cards.
+
+- Game board :
+    - A card clicked by the user is getting flipped.
+    - The timer and a game board are "linked" properly.
+    - Once the user flips two cards, the game board is blocked successfully. ***(This prevents the player from flipping more than two cards.)***
+    - The flip counter is updated successfully after each pair of cards is flipped.
+    - If the match doesn't occur, both cards are getting unflipped successfully.
+    - If a match occurs, both cards remain flipped, and the user can click another card. In that case, the score is being updated successfully.
+    - Once the time is up or the score is equal to 8, the user is successfully redirected to the game-over screen.
+    - The user's score is passed to the local storage successfully.
+
+- Game-over screen :
+    - The score on the page is equal to the user's score. Score is being successfully fetched from local storage.
+    - "Save button" is successfully enabled once the user enters something in the designated input area.
+    - The user is successfully redirected to the leaderboard once the score is saved.
+
+- Leaderboard (best scores) :
+    - Saved scores are successfully stored and displayed on the leaderboard.
+    
