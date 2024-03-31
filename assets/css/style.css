@@ -15,12 +15,8 @@ body{
     background-color: #000;
     color: #fafafa;
     font-family: Witcher, "Roboto", sans-serif;
-    cursor: url("../fonts-and-cursors/cursor.png"), auto; /*credit: icons8*/
  }
 
-:hover {
-  cursor: url("../fonts-and-cursors/cursor.png"), pointer;
- }
 
  /*css fixing number's readability*/
 
@@ -107,7 +103,7 @@ hr {
 .btn-xl {
   width: 15rem;
   font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 1.5rem; 
   margin-bottom: 1rem;
 }
 
@@ -198,7 +194,7 @@ footer li a i {
 }
 
 #game-over a {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .score-form {
@@ -246,16 +242,28 @@ footer li a i {
   .btn-xl {
     font-size: 1rem;
   }
-  
+  #game-over h3 {
+    margin-top: 7rem;
+  }
 }
 
-  @media only screen and (max-width: 922px) and (max-height: 900px) {
+  @media only screen and (max-width: 922px) and (max-height: 932px) {
    .game-container {
     width: 350px;
     height: 350px;
     padding: 0;
     justify-content: center;
     }
+    #home-section {
+      margin-top: 6rem;
+    }
+  }
 
-    
+  @media only screen and (max-width: 280px) {
+    #game-over h3 {
+      margin-top: 3rem;
+    }
+    #username {
+      margin-bottom: 1rem;
+    }
   }
