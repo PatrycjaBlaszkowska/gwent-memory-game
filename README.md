@@ -309,10 +309,10 @@ All buttons are fully responsive and working with no issues.
 - [jQuery](https://jquery.com/)
 - [Gitpod](https://www.gitpod.io/)
 - [Github](https://github.com/)
-- [Git]((https://git-scm.com/))
+- [Git](https://git-scm.com/)
 - [Bootstrap 4.6](https://getbootstrap.com/docs/4.6/getting-started/introduction/)
-- [FontAwsome]((https://fontawesome.com/))
-- [Balsamiq]((https://balsamiq.com/wireframes/?gad_source=1&gclid=Cj0KCQiAy9msBhD0ARIsANbk0A_UrgDIhg_KSUHNCOUn-D9DiHl_9Z1dwScGRuI4JET1bnKbQkqwSb8aArFqEALw_wcB))
+- [FontAwsome](https://fontawesome.com/)
+- [Balsamiq](https://balsamiq.com/wireframes/?gad_source=1&gclid=Cj0KCQiAy9msBhD0ARIsANbk0A_UrgDIhg_KSUHNCOUn-D9DiHl_9Z1dwScGRuI4JET1bnKbQkqwSb8aArFqEALw_wcB)
 - [Google Fonts](https://fonts.google.com/)
 - [QuillBot](https://quillbot.com/)
 - [Google Developer Tools](https://developer.chrome.com/docs/devtools/)
@@ -407,3 +407,15 @@ However, during testing process below browsers have been used :
 ### Validation
 
 [HTML validator](https://validator.w3.org/)
+
+- 0 errors
+- 0 warnings
+
+![HTML validator results](./docs/images/html-validation.PNG)
+
+[CSS validator](https://jigsaw.w3.org/css-validator/)
+
+- 0 errors
+- 0 warnings
+
+![CSS validator results](./docs/images/css-validation.PNG)
