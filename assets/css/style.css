@@ -6,45 +6,43 @@
 }
 
 * {
-    padding: 0;
-    margin: 0;
-  }
+  padding: 0;
+  margin: 0;
+}  
   
-
-body{
-    background-color: #000;
-    color: #fafafa;
-    font-family: Witcher, "Roboto", sans-serif;
- }
-
+body {
+  background-color: #000;
+  color: #fafafa;
+  font-family: Witcher, "Roboto", sans-serif;
+}
 
  /*css fixing number's readability*/
 
 .number {
   font-family: "Roboto", sans-serif;
- }
+}
 
  /*Navigation section*/
 
 .navbar-dark .navbar-toggler {
-    border-color: #fafafa;
+  border-color: #fafafa;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #fafafa;
-    text-transform: uppercase;
-    font-size: large;
+  color: #fafafa;
+  text-transform: uppercase;
+  font-size: large;
 }
 
 /*Home section*/
 
 .main-heading {
-    padding-bottom: 3rem;
-    text-transform: uppercase;
+  padding-bottom: 3rem;
+  text-transform: uppercase;
 }
 
 #home {
-    margin-top: 2rem;
+  margin-top: 2rem;
 }
 
 /*Introduction section*/
@@ -56,7 +54,7 @@ body{
 /*Features section*/
 
 #features {
-background: url("../images/features-background.jpg") center center / cover no-repeat;
+  background: url("../images/features-background.jpg") center center / cover no-repeat;
 }
 
 .bkg {
@@ -79,9 +77,9 @@ hr {
 }
 
 #features h3{
-    text-align: center;
-    padding: 1rem;
-    padding-bottom: 1rem;
+  text-align: center;
+  padding: 1rem;
+  padding-bottom: 1rem;
 }
 
 /*instructions section*/
@@ -97,7 +95,7 @@ hr {
 /*play now section*/
 
 #button-section {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .btn-xl {
@@ -131,59 +129,59 @@ footer li a i {
 /*game heading/ info section*/
 
 #game-heading {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 
 /*game section(game board)*/
 
 .game-container {
-    padding-top: 5px;
-    width: 600px;
-    height: 600px;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-  }
+  padding-top: 5px;
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
   
   /*cards section*/
 
-  .game-card {
-    width: 25%;
-    height: calc(33.333% - 10px);
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
-    box-shadow: 1px 1px 1px rgba(0,0,0,.3);
-  }
+.game-card {
+  width: 25%;
+  height: calc(33.333% - 10px);
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
   
-  .game-card:active {
-    transform: scale(0.97);
-    transition: transform .2s;
-  }
+.game-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
   
 
-  .game-card.flip {
+.game-card.flip {
     transform: rotateY(180deg);
-  }
+}
 
-  .front-face,
-  .back-face {
-    width: 100%;
-    height: 100%;
-    padding: 5px;
-    position: absolute;
-    backface-visibility: hidden;
-  }
+.front-face,
+.back-face {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  position: absolute;
+  backface-visibility: hidden;
+}
 
-  .front-face {
-    transform: rotateY(180deg);
-  }
+.front-face {
+  transform: rotateY(180deg);
+}
 
-  #home-section {
-    margin-top: 11rem;
-  }
+#home-section {
+  margin-top: 11rem;
+}
 
 /*game-Over section*/
 
@@ -247,27 +245,27 @@ footer li a i {
   }
 }
 
-  @media only screen and (max-width: 922px) and (max-height: 932px) {
-   .game-container {
+@media only screen and (max-width: 922px) and (max-height: 932px) {
+  .game-container {
     width: 350px;
     height: 350px;
     padding: 0;
     justify-content: center;
-    }
-    #home-section {
-      margin-top: 6rem;
-    }
   }
+  #home-section {
+    margin-top: 6rem;
+  }
+}
 
-  @media only screen and (max-width: 280px) {
-    #game-over h3 {
-      margin-top: 3rem;
-    }
-    #username {
-      margin-bottom: 1rem;
-    }
-    .game-container {
-      width: 280px;
-      height: 280px;
-    }
+@media only screen and (max-width: 280px) {
+  #game-over h3 {
+    margin-top: 3rem;
   }
+  #username {
+    margin-bottom: 1rem;
+  }
+  .game-container {
+    width: 280px;
+    height: 280px;
+  }
+}
