@@ -88,8 +88,17 @@ hr {
   margin-top: 2rem;
 }
 
-#instructions p {
+#instructions ol li {
+  text-align: left;
+  margin-left: 35%;
+  display: list-item;
+  list-style-position: inside;
   padding: 0.5rem 0.5rem 0 0;
+  font-size: 1.2rem;
+}
+
+#instructions p {
+  font-size: 1.5rem;
 }
 
 /*play now section*/
@@ -242,6 +251,15 @@ footer li a i {
   }
   #game-over h3 {
     margin-top: 7rem;
+  }
+  #instructions p {
+    font-size: 1.3rem;
+  }
+  #instructions ol li {
+    font-size: 1rem;
+    text-align: left;
+    margin-right: 5px;
+    margin-left: 10px;
   }
 }
 
