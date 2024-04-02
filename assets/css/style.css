@@ -141,6 +141,18 @@ footer li a i {
   padding-top: 2rem;
 }
 
+.btn-navigation {
+  width: 9rem;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.btn-navigation i {
+  color: #000;
+}
+
 /*game section(game board)*/
 
 .game-container {
@@ -153,7 +165,7 @@ footer li a i {
   box-sizing: border-box;
 }
   
-  /*cards section*/
+/*cards section*/
 
 .game-card {
   width: 25%;

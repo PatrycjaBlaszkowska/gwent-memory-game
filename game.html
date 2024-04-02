@@ -23,16 +23,21 @@
   <div id="game-info">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-3 col-sm-12">
           <h4>Time: <span id="timer" class="number">60</span></h4>
         </div>
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-3 col-sm-12">
           <h4>Score: <span id="score" class="number">0</span></h4>
         </div>
-        <div class="col-lg-4 col-sm-12">
+        <div class="col-lg-3 col-sm-12">
           <h4>Flips: <span id="flips" class="number">0</span></h4>
         </div>
-      </div>
+        <div class="col-lg-3 col-sm-12">
+          <a href="#home-section" class="btn btn-navigation btn-light" aria-label="navigation">
+            <span>Scroll down</span>
+            <i class="fa-regular fa-circle-down"></i>
+          </a>
+        </div>
     </div>
   </div>
   <!--Game container-->
@@ -108,8 +113,7 @@
     </div>
 
     <div class="game-card" data-card="lady">
-      <img class="front-face" src="assets/images/gwent-lady-of-the-lake.jpg"
-        alt="Gwent card with the lady of the lake">
+      <img class="front-face" src="assets/images/gwent-lady-of-the-lake.jpg" alt="Gwent card with the lady of the lake">
       <img class="back-face" src="assets/images/card-back-face.png" alt="Back of the game card">
     </div>
 
@@ -123,12 +127,14 @@
       <img class="back-face" src="assets/images/card-back-face.png" alt="Back of the game card">
     </div>
   </div>
+
   <div id="home-section" class="text-center">
     <a href="index.html" class="btn btn-xl btn-light" aria-label="home">Home</a>
     <a href="game.html" class="btn btn-xl btn-light" aria-label="reset">Reset</a>
   </div>
   <!--Scripts-->
   <script src="assets/js/game.js"></script>
+  <script src="https://kit.fontawesome.com/c3fcb94a82.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
