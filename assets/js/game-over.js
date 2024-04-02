@@ -20,9 +20,11 @@ username.addEventListener("keyup", () => {
 const saveScore = e => {
     e.preventDefault();
 
+    let truncatedName = username.value.length > 10 ? username.value.slice(0, 10) + "..." : username.value;
+
     const score = {
         score: currentScore,
-        name: username.value
+        name: truncatedName 
     };
 
     bestScores.push(score);
