@@ -6,6 +6,6 @@ const bestScores = JSON.parse(localStorage.getItem("bestScores")) || [];
  * from a localStore and push it to
  * the leaderboard list.
  */
-leaderboard.innerHTML = bestScores.map(score => {
-        return `<li class="best-score">${score.name} : <span class="number">${score.score}</span></li>`
-    }).join("");
+leaderboard.innerHTML = bestScores.length > 0 ? bestScores.map(score => { 
+    return `<li class="best-score">${score.name} : <span class="number">${score.score}</span></li>`; 
+}).join("") : "<li>Please play a game and save your amazing score to see it here!</li>";
