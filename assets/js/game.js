@@ -15,8 +15,6 @@ let flips = 0;
  * change hasFlipped to either true or false
  * and calls checkForMatch() function.
  */
-
-
 function flipCard() {
   if (lockCards) return;
 
@@ -38,13 +36,11 @@ function flipCard() {
 
 }
 
-
 /**
  * This function shuffle
  * cards everytime page
  * is being loaded.
  */
-
 const shuffleCards = () => {
   const frontFaceCards = document.querySelectorAll('.game-card .front-face');
 
@@ -62,7 +58,6 @@ const shuffleCards = () => {
  * number of flips every time user 
  * flips a pair of cards.
  */
-
 const increaseFlips = () => {
   flips += 1;
   flipsStr.innerText = flips;
@@ -73,7 +68,6 @@ const increaseFlips = () => {
  * and calls disableCards() if true
  * or unflipCards() if false.
  */
-
 const checkForMatch = () => {
   let isMatch = firstCard.dataset.card === secondCard.dataset.card;
   isMatch ? disableCards() & increaseScore() : unflipCards();
@@ -84,18 +78,14 @@ const checkForMatch = () => {
  * This function increases a score 
  * if match occurs. 
  */
-
 const increaseScore = () => {
   score += 1;
   scoreStr.innerText = score;
 }
 
 /*redirection to the game-over html page*/
-
 const GameOver = () => {
-
   localStorage.setItem("currentScore", score);
-
   return window.location.assign("game-over.html");
 }
 
@@ -103,7 +93,6 @@ const GameOver = () => {
  * This function disable cards f
  * rom fliping if they match.
  */
-
 const disableCards = () => {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
@@ -113,7 +102,6 @@ const disableCards = () => {
  * This function unflips cards 
  * if they do not match.
  */
-
 const unflipCards = () => {
   lockCards = true;
   setTimeout(() => {
@@ -127,7 +115,6 @@ const unflipCards = () => {
  * This function counts down 
  * to zero.
  */
-
 function startCountdown() {
   let timerElement = document.getElementById('timer');
   let count = parseInt(timerElement.innerText);
@@ -140,7 +127,6 @@ function startCountdown() {
     }
   }, 1000);
 }
-
 
 /*event listeners*/
 

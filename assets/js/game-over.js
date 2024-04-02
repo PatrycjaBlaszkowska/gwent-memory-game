@@ -11,6 +11,7 @@ finalScore.innerText = currentScore;
 username.addEventListener("keyup", () => {
     saveButton.disabled = !username.value;
 });
+
 /**
  * This function takes user input(name)
  *  push and sort score to the local
