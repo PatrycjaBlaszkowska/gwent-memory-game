@@ -430,6 +430,13 @@ However, during testing process below browsers have been used :
 - The custom font made 0 and 8 look the same when displaying points, flips, and time left:
     - Decided to change a font to Roboto for all numbers to improve user experiance and avoid confusion.
 
+### Unresolved Bugs :
+
+- saveScore() function from game-over.js may show up as "unused" function :
+    - Event listener for this function has not been created, however, function has been called in game-over.html on line 25 as per below:
+
+![saveScore "bug"](./docs/images/saveScore-bug.png)
+
 ## Deployment 
 
 The master branch of this repository is the most current version and has been used for the deployed version of the site.
