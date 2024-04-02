@@ -266,4 +266,8 @@ footer li a i {
     #username {
       margin-bottom: 1rem;
     }
+    .game-container {
+      width: 280px;
+      height: 280px;
+    }
   }
