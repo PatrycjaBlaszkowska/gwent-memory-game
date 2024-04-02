@@ -1,124 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gwent Memory Game</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gwent Memory Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+  <header>
     <!--Navbar section-->
     <nav class="navbar navbar-expand-lg navbar-dark bg-grey">
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarText"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarText">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#features">Features</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#instructions">Instructions</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="game.html">Play Now!</a>
-              </li>
-          </ul>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse d-lg-flex justify-content-center" id="navbarText">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#instructions">Instructions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="game.html">Play Now!</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!--Home section-->
+    <section id="home" class="text-center">
+      <h1 class="main-heading">Gwent Memory Game</h1>
+      <div id="introduction">
+        <h2>Do you dare to test your memory?</h2>
+        <p>Do it with Gwent memory game!</p>
+        <p>This is a simple mix & match card game inspired by Witcher's universe.</p>
+      </div>
+    </section>
+    <!--Features section-->
+    <section id="features">
+      <div class="container-fluid bkg">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-12 col-lg-6 text-center">
+            <h3>
+              Features
+            </h3>
+            <!--Feature one-->
+            <h4 class="text-right">Points and flips counter</h4>
+            <p class="text-right">Train and gain as much points as you can in only few flips!</p>
+            <hr class="hr-right">
+            <!--Feature two-->
+            <h4 class="text-left">Memory development</h4>
+            <p class="text-left">Improve your memory and have fun at the same time!</p>
+            <hr>
+            <!--Feature three-->
+            <h4 class="text-right">Simple rules!</h4>
+            <p class="text-right">Easy to understand and play.</p>
+            <hr class="hr-right">
+            <!--Feature four-->
+            <h4 class="text-left">Learn and have fun!</h4>
+            <p class="text-left">Discover Witcher's characters.</p>
+            <hr>
+          </div>
         </div>
-      </nav>
-      <!--Home section-->
-      <section id="home" class="text-center">
-        <h1 class="main-heading">Gwent Memory Game</h1>
-        <div id="introduction">
-          <h2>Do you dare to test your memory?</h2>
-          <p>Do it with Gwent memory game!</p>
-          <p>This is a simple mix & match card game inspired by Witcher's universe.</p>
-        </div>
-      </section>
-      <!--Features section-->
-      <section id="features">
-        <div class="container-fluid bkg">
-            <div class="row justify-content-center">
-                <div class="col-sm-12 col-md-12 col-lg-6 text-center">
-                    <h3>
-                        Features
-                    </h3>
-    
-                      <h4 class="text-right">Points and flips counter</h4>
-                      <p class="text-right">Train and gain as much points as you can in only few flips!</p>
-                      <hr class="hr-right">
-
-                      <h4 class="text-left">Memory development</h4>
-                      <p class="text-left">Improve your memory and have fun at the same time!</p>
-                      <hr>
-
-                      <h4 class="text-right">Simple rules!</h4>
-                      <p class="text-right">Easy to understand and play.</p>
-                      <hr class="hr-right">
-
-                      <h4 class="text-left">Learn and have fun!</h4>
-                      <p class="text-left">Discover Witcher's characters.</p>
-                      <hr>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
     <!--Instructions section-->
     <section id="instructions" class="text-center">
       <h3>Instructions</h3>
       <p>Gwent memory game is a mix & match game. Player needs to flip two identical cards to get a point.</p>
-      <p>Take on the challenge to match all the pairs before time runs out.</p>
+      <p>Take on the challenge to match all the pairs before the time runs out.</p>
+      <p>You have 60 seconds to match all pairs before a game is over!</p>
+      <p>Don't worry if you don't. You can still save your score on a leaderboard.</p>
+      <p>Keep practicing and become a Gwent Memory Game master!</p>
       <p>Have fun and compete with your friends!</p>
     </section>
     <div id="button-section" class="text-center">
-        <a href="game.html" class="btn btn-xl btn-light sword play-btn">Play!</a>
-        <a href="leaderboard.html" class="btn btn-xl btn-light sword leaderboard-btn" >Leaderboard</a>
+      <a href="game.html" class="btn btn-xl btn-light sword play-btn">Play!</a>
+      <a href="leaderboard.html" class="btn btn-xl btn-light sword leaderboard-btn">Leaderboard</a>
     </div>
-    <!--footer-->
-    <footer>
-      <ul>
-        <li class="hvr-grow">
-          <a href="https://www.facebook.com/" target="_blank">
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <span class="sr-only">Facebook</span>
-          </a>
-        </li>
-        <li  class="hvr-grow">
-          <a href="https://www.instagram.com/" target="_blank">
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <span class="sr-only">Instagram</span>
-          </a>
-        </li>
-        <li class="hvr-grow">
-          <a href="https://www.twitter.com/" target="_blank">
-            <i class="fa fa-twitter" aria-hidden="true"></i>
-            <span class="sr-only">Twitter</span>
-          </a>
-        </li>
-        <li class="hvr-grow">
-          <a href="https://www.youtube.com/" target="_blank">
-            <i class="fa fa-youtube" aria-hidden="true"></i>
-            <span class="sr-only">Youtube</span>
-          </a>
-        </li>
-      </ul>
-    </footer>
-      <!--Bootstrap scripts-->
-      <script src="https://kit.fontawesome.com/c3fcb94a82.js" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </main>
+  <!--footer-->
+  <footer>
+    <ul>
+      <li class="hvr-grow">
+        <a href="https://www.facebook.com/" target="_blank">
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
+      </li>
+      <li class="hvr-grow">
+        <a href="https://www.instagram.com/" target="_blank">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+      </li>
+      <li class="hvr-grow">
+        <a href="https://www.twitter.com/" target="_blank">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+          <span class="sr-only">Twitter</span>
+        </a>
+      </li>
+      <li class="hvr-grow">
+        <a href="https://www.youtube.com/" target="_blank">
+          <i class="fa fa-youtube" aria-hidden="true"></i>
+          <span class="sr-only">Youtube</span>
+        </a>
+      </li>
+    </ul>
+  </footer>
+  <!--Bootstrap scripts-->
+  <script src="https://kit.fontawesome.com/c3fcb94a82.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous">
+  </script>
 </body>
 </html>
