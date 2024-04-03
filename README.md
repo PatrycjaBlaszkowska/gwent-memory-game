@@ -396,17 +396,31 @@ However, during testing process below browsers have been used :
 
 ![CSS validator results](/docs/images/css-validation.PNG)
 
+[Js validator](https://jshint.com/)
+
+**Game.js** :
+
+ - One undefined variable - "module" :
+    - module.exports has been used to export js functions in order to test them with Jest. As per [freeCodeCamp](https://www.freecodecamp.org/news/module-exports-how-to-export-in-node-js-and-javascript/) the syntax is valid. Using if (typeof module === 'object') removed the error from the console but not from the JSHint.
+
+**Game-over.js** :
+
+- One unused variable - saveScore()  :
+    - Event listener for this function has not been created, however, function has been called in game-over.html on line 25 as per below:
+
+![saveScore "bug"](/docs/images/save-score-bug.png)
+
+**Leaderboard.js** : 
+
+- 0 warnings
+- 0 errors
+
+![JSHint results](/docs/images/js-hint.png)
+
 ### Bugs and Fixes :
 
 - The custom font made 0 and 8 look the same when displaying points, flips, and time left:
     - Decided to change a font to Roboto for all numbers to improve user experiance and avoid confusion.
-
-### Unresolved Bugs :
-
-- saveScore() function from game-over.js may show up as "unused" function :
-    - Event listener for this function has not been created, however, function has been called in game-over.html on line 25 as per below:
-
-![saveScore "bug"](/docs/images/save-score-bug.png)
 
 ## Deployment 
 
