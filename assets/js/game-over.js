@@ -1,4 +1,4 @@
-/*global variables*/
+//global variables
 
 const username = document.querySelector("#username");
 const currentScore = localStorage.getItem("currentScore");

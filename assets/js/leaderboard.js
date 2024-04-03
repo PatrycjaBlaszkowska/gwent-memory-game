@@ -1,3 +1,5 @@
+//global variables
+
 const leaderboard = document.querySelector("#leaderboard");
 const bestScores = JSON.parse(localStorage.getItem("bestScores")) || [];
 

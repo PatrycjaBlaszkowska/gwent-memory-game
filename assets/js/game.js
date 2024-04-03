@@ -1,4 +1,5 @@
-/*global variables*/
+//global variables
+
 const cards = document.querySelectorAll('.game-card');
 let scoreStr = document.querySelector("#score");
 let flipsStr = document.querySelector("#flips");
@@ -61,7 +62,7 @@ const shuffleCards = () => {
 const increaseFlips = () => {
   flips += 1;
   flipsStr.innerText = flips;
-}
+};
 
 /**
  * This function checks for a match 
@@ -70,9 +71,14 @@ const increaseFlips = () => {
  */
 const checkForMatch = () => {
   let isMatch = firstCard.dataset.card === secondCard.dataset.card;
-  isMatch ? disableCards() & increaseScore() : unflipCards();
+  if (isMatch) {
+    disableCards();
+    increaseScore();
+  } else {
+    unflipCards();
+  }
   return;
-}
+};
 
 /**
  * This function increases a score 
@@ -81,13 +87,13 @@ const checkForMatch = () => {
 const increaseScore = () => {
   score += 1;
   scoreStr.innerText = score;
-}
+};
 
 /*redirection to the game-over html page*/
 const GameOver = () => {
   localStorage.setItem("currentScore", score);
   return window.location.assign("game-over.html");
-}
+};
 
 /**
  * This function disable cards f
@@ -96,7 +102,7 @@ const GameOver = () => {
 const disableCards = () => {
   firstCard.removeEventListener("click", flipCard);
   secondCard.removeEventListener("click", flipCard);
-}
+};
 
 /**
  * This function unflips cards 
@@ -109,7 +115,7 @@ const unflipCards = () => {
     secondCard.classList.remove("flip");
     lockCards = false;
   }, 1000);
-}
+};
 
 /**
  * This function counts down 
