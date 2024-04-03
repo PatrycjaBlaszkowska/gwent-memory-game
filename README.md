@@ -2,43 +2,7 @@
 
 [Link to a live site](https://patrycjablaszkowska.github.io/gwent-memory-game/)
 
-![Responsive view of Wizzards Tower website](./docs/images/introduction-view.PNG)
-
-## **Contents**
-
-- [Intrdocution](#introduction)
-- [UXD - User Experience Design](#uxd--user-experience-design)
-- [The Strategy Plane](#the-strategy-plane)
-    - [Creator Goals](#creator-goals)
-    - [User Stories](#user-stories) 
-- [The Scope Plane](#the-scope-plane)
-- [The Structure Plane](#the-structure-plane)
-    - [Colors](#colors)
-    - [Fonts](#fonts)
-    - [Images](#images)
-- [The Skeleton Plane](#the-skeleton-plane)
-    - [Additonal page](#additional-page)
-- [The Surface Plane](#the-surface-plane)
-    - [Navbar](#navigation-bar)
-    - [Footer](#footer)
-    - [Navigation buttons](#navigation-buttons)
-    - [Introduction](#introduction-section)
-    - [Game features](#game-features-section)
-    - [Instructions](#instructions-section)
-    - [Game Info](#game-info-section)
-    - [Game](#game-section)
-    - [Game-over](#game-over-screen)
-    - [Best Scores](#best-scores-section)
-- [Technologies](#technologies-used)
-- [Testing](#testing)
-    - [Manual Testing](#manual-testing)
-    - [Devices](#devices-used-during-testing)
-    - [Chtome Dev Tools](#chrome-dev-tools)
-    - [Browser](#browser-testing)
-    - [Validation](#validation)
-    - [Bugs](#bugs-and-fixes)
-- [Deployment](#deployment)
-- [Credits](#credits)
+![Responsive view of Wizzards Tower website](/docs/images/introduction-view.PNG)
 
 ## INTRODUCTION 
 
@@ -133,29 +97,29 @@ The planning process helped me decide which features could be implemented within
 - Icons (social links)
 - Horizontal break lines (hr HTML tags)
 
-![#FAFAFA Hex Color](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/docs/images/%23FAFAFA.PNG)
+![#FAFAFA Hex Color](/docs/images/fafafa.PNG)
 
 #000 :
 
 - Background color
 
-![#000 Hex Color](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/docs/images/%23000.PNG)
+![#000 Hex Color](/docs/images/000.PNG)
 
 #E2E6EA : 
 
 - Buttons background color
 
-![#E2E6EA HEX COLOR](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/docs/images/%23E2E6EA.PNG)
+![#E2E6EA HEX COLOR](/docs/images/e2e6ea.PNG)
 
 #DAE0E5 :
 
 - Buttons border color
 
-![#DAE0E5 HEX COLOR](https://github.com/PatrycjaBlaszkowska/gwent-memory-game/blob/main/docs/images/%23DAE0E5.PNG)
+![#DAE0E5 HEX COLOR](/docs/images/dae0e5.PNG)
 
 ### Fonts :
 
-#### As my main font, I used custom "The Witcher Font" to improve the user experience and make him feel more like in the "The Witcher 3" video game. 
+**As my main font, I used custom "The Witcher Font" to improve the user experience and make him feel more like in the "The Witcher 3" video game.**
 
 
 *More about this font in credits section*
@@ -172,25 +136,25 @@ Images for this project has been downloaded from:
 - [Creative Uncut](https://www.creativeuncut.com/)
 - [Wallpaper Cave](https://wallpapercave.com/)
 
-##### *More information in credits section.*
+***More information in credits section.***
 
 
 ## The Skeleton Plane
 
 I made some significant changes to my project. I realised that I missed some important features. In my opinion, it was causing a poor user experience, so I decided to implement some changes.
 
-[Home page wireframes](./docs/wireframes/home.pdf)
+[Home page wireframes](/docs/wireframes/home.pdf)
 
 - I decided to change a original layout for a features section on desktop. Instead of placing all of them in one column I decided to split them and floated them to right and left. It helped me to create a visual impression of "two columns" and improve user experiance.
 
 - I decided to add a button linked to a leaderboard so user can access it before playing a actuall game.
 
-[Game page wireframes](./docs/wireframes/game.pdf)
+[Game page wireframes](/docs/wireframes/game.pdf)
 
 - I decided to add a button linked to a home page so user can navigate easily.
 - I decided to add a button linked to a leaderboard so user can access it while playing a game without a need of finishing it.
 
-[Leaderboard page wireframes](./docs/wireframes/leadearboard.pdf)
+[Leaderboard page wireframes](/docs/wireframes/leadearboard.pdf)
 
 - I decided to change a heading from "Leaderboard" to "Best Scores".
 - I decided to add a button linked to a home page so user can navigate easily.
@@ -199,7 +163,7 @@ I made some significant changes to my project. I realised that I missed some imp
 
 After I finished my planning process, I did some additional research and decided to change "Game Over Modal" to the full HTML Gave Over page. This has been added later in the development process. Therefore, I didn't originally create a wireframe for this page.
 
-![Game Over screen](./docs/wireframes/game-over-screen.PNG)
+![Game Over screen](/docs/wireframes/game-over-screen.PNG)
 
 ## The Surface Plane
 
@@ -213,18 +177,18 @@ After I finished my planning process, I did some additional research and decided
 
 **Desktop** :
 
-![Navbar - desktop view](./docs/images/navbar-desktop.PNG)
+![Navbar - desktop view](/docs/images/navbar-desktop.PNG)
 
 **Mobile**
 
-![Navbar - mobile view](./docs/images/navbar-mobile.PNG)
+![Navbar - mobile view](/docs/images/navbar-mobile.PNG)
 
 ### Footer :
 
 - Footer is present on the home page and fully responsive across all resolutions.
 - Footer contains social media links that are opening in a new tab.
 
-![Footer](./docs/images/footer.PNG)
+![Footer](/docs/images/footer.PNG)
 
 ### "Navigation" buttons :
 
@@ -238,65 +202,65 @@ All buttons are fully responsive and working with no issues.
 - Present on the leaderboard page so the user can go back to the home page after checking the best scores.
 - Present on the game-over page so the user can go back to the home page without saving a score.
 
-![Home button](./docs/images/home-button.PNG)
+![Home button](/docs/images/home-button.PNG)
 
 **Leaderboard button**
 
 - Present on the home page so the user can see the leaderboard before playing a game.
 - Present on the game-over page so the user can see the leaderboard without saving a score.
 
-![Leaderboard button](./docs/images/leaderboard-button.PNG)
+![Leaderboard button](/docs/images/leaderboard-button.PNG)
 
 **Play button**
 
 - Present on the home page, so the user can start a game from the bottom of the page too. 
 
-![Play button](./docs/images/play-button.PNG)
+![Play button](/docs/images/play-button.PNG)
 
 **Reset button**
 
 - Present on the game page so the user can reset a game before finishing it.
 - Present on the game over screen so the user can play again without saving a score. 
 
-![Reset button](./docs/images/reset-button.PNG)
+![Reset button](/docs/images/reset-button.PNG)
 
 ### Introduction section : 
 
 - The introduction section shows the purpose of the website right away, so the user can determine if this game is suitable for him within the first few minutes.
 
-![Introduction](./docs/images/introduction-home-page.PNG)
+![Introduction](/docs/images/introduction-home-page.PNG)
 
 ### Game features section :
 
 - The game features section shows what the game has to offer and all the advantages of playing it.
 
-![Game features](./docs/images/game-features.PNG)
+![Game features](/docs/images/game-features.PNG)
 
 ### Instructions section :
 
 - The instructions section instructs the player on how to play the game.
 
-![Instructions](./docs/images/instructions.PNG)
+![Instructions](/docs/images/instructions.PNG)
 
 ### Game info section :
 
 - The game info section includes a timer, score, and flips counter.
 
-![Game section info](./docs/images/game-info.PNG)
+![Game section info](/docs/images/game-info.PNG)
 
 ### Game section :
 
 - The game section includes fully functioning game board of 16 cards.
 - The player have 60 seconds to match as many pairs of cards as possible.
 
-![Game board](./docs/images/game-board.PNG)
+![Game board](/docs/images/game-board.PNG)
 
 ### Game over screen :
 
 - The game-over screen is presented to the player either after 60 seconds or if the player manages to match 8 pairs of cards before time runs out.
 - The game-over screen allows player to save his/hers name to the leaderboard or navigate back.
 
-![Game over](./docs/wireframes/game-over-screen.PNG)
+![Game over](/docs/wireframes/game-over-screen.PNG)
 
 ### Best scores section :
 
@@ -324,7 +288,7 @@ All buttons are fully responsive and working with no issues.
 
 ### User stories :
 
-[User stories testing](./docs/testing/testing.md)
+[User stories testing](/docs/testing/testing.md)
 
 ### Manual Testing :
 
@@ -416,14 +380,14 @@ However, during testing process below browsers have been used :
 - 0 errors
 - 0 warnings
 
-![HTML validator results](./docs/images/html-validation.PNG)
+![HTML validator results](/docs/images/html-validation.PNG)
 
 [CSS validator](https://jigsaw.w3.org/css-validator/)
 
 - 0 errors
 - 0 warnings
 
-![CSS validator results](./docs/images/css-validation.PNG)
+![CSS validator results](/docs/images/css-validation.PNG)
 
 ### Bugs and Fixes :
 
@@ -435,7 +399,7 @@ However, during testing process below browsers have been used :
 - saveScore() function from game-over.js may show up as "unused" function :
     - Event listener for this function has not been created, however, function has been called in game-over.html on line 25 as per below:
 
-![saveScore "bug"](./docs/images/saveScore-bug.png)
+![saveScore "bug"](/docs/images/save-score-bug.png)
 
 ## Deployment 
 
