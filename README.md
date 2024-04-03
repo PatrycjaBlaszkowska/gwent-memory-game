@@ -341,13 +341,15 @@ All buttons are fully responsive and working with no issues.
 ### Chrome Dev Tools :
 
 Chrome dev tools was used throughout the development of the project to test responsiveness. 
-Responsiveness was tested using Dev Tools to emulate the following devices :
+Responsiveness was tested using Dev Tools and Responsive Viewer browser extension to emulate the following devices :
 
 - Iphone SE
 - Iphone XR
 - Iphone 12 Pro
 - Iphone 14 Pro Max
 - Pixel 7
+- Pixel 2
+- Samsung  Galaxy S9, Note 8, S8
 - Samsung Galaxy S8+
 - Samsung Galaxy S20 Ultra
 - iPad Mini
@@ -360,7 +362,12 @@ Responsiveness was tested using Dev Tools to emulate the following devices :
 - Samsung Galaxy A51/71
 - Nest Hub
 - Nest Hub Max
+- Nexus 6P
+- Kindle Fire HDX 
+- LG Optimus L70
+- Nokia 8110 4G
 
+![Responsive Viewer](/docs/images/responsive-viewer.png)
 
 ### Browser Testing :
 
