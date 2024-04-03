@@ -206,7 +206,7 @@ footer li a i {
 
 /*game-Over section*/
 
-#game-over h3 {
+#game-over h1 {
   margin-top: 15rem;
   padding-bottom: 2rem;
   font-size: 5rem;
@@ -220,12 +220,12 @@ footer li a i {
   font-size: 1rem;
 }
 
-.score-form h5 {
+.score-form h3 {
   font-size: 1.5rem;
   padding-bottom: 0.5rem;
 }
 
-.score-form h4 {
+.score-form h2 {
   font-size: 2rem;
   padding-bottom: 1rem;
 }
