@@ -273,6 +273,7 @@ All buttons are fully responsive and working with no issues.
 - [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Learn/JavaScript)
+- [Jest](https://jestjs.io/)
 - [jQuery](https://jquery.com/)
 - [Gitpod](https://www.gitpod.io/)
 - [Github](https://github.com/)

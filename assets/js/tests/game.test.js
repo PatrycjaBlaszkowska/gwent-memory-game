@@ -10,13 +10,19 @@ beforeAll(() => {
   document.close();
 });
 
-
 const { urlToHttpOptions } = require("url");
-const {checkForMatch, flipCard,startCountdown,unflipCards} = require("../game");
+const {flipCard,startCountdown,unflipCards} = require("../game");
 const { TestEnvironment } = require("jest-environment-jsdom");
 const { hasUncaughtExceptionCaptureCallback } = require("process");
 const { createDecipheriv } = require("crypto");
+const { time } = require("console");
+const element = document.querySelector("#elementId");
 
+//variables required to proceed with testing
+const firstCard = document.createElement("div");
+firstCard.classList.add("flip");
+const secondCard = document.createElement("div");
+secondCard.classList.add("flip");
 
 describe("game page works correctly", () => {
   test("game heading exist", () => {
@@ -28,10 +34,24 @@ describe("game page works correctly", () => {
         expect(timer.innerHTML).toBe(59);
       }, "1000")
   });
-  test("flip class to exist", () => {
-    expect(document.getElementsByClassName("flip")).toBeTruthy()
+});
+
+describe("flipCard and unflipCards functions work properly", () => {
+  test("should apply class 'flip' on click", () => {
+    const card = document.createElement('div');
+    card.addEventListener('click', flipCard);
+    card.click();
+    expect(card.classList.contains('flip')).toBe(true);
+  });
+  test("flip class is removed when function is called", () => {
+    unflipCards();
+    setTimeout(() => {
+    expect(firstCard.classList.contains("flip")).toBe(false);
+    expect(secondCard.classList.contains("flip")).toBe(false);
+  }, "1000")
   });
 });
+
 
 //home page tests//
 

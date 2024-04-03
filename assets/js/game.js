@@ -143,11 +143,10 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 
 if (typeof module === 'object') {
   module.exports = {
-    checkForMatch,
     flipCard,
     startCountdown,
     increaseScore,
-    unflipCards
+    unflipCards,
   };
 }
 
