@@ -291,6 +291,19 @@ All buttons are fully responsive and working with no issues.
 
 [User stories testing](/docs/testing/testing.md)
 
+### Automatic Testing(Jest) :
+
+I tested all functions I was able to using Jest. I weren't able to test all of them due to the structure of the code. They would require complicated, deep tests or direct "user" interaction which was extremely difficult to "symulate" in code. However, I addionally testem them in the console and by playing the game myself. I was able to test the most important functions and a game features without which game wouldn't work at all. Tests results below :
+
+![Jest results](./docs/images/jest.PNG)
+
+**IMPORTANT** :
+- For test purposes, I moved the below variables inside the increaseScore() function so the score can be easily updated retrieved from the DOM:
+
+let scoreStr = document.querySelector("#score");
+let score = parseInt(scoreStr.innerHTML);
+
+However, I needed to make them global variables again in order for the score to be passed to the local storage and so the GameOver() function could work properly.
 ### Manual Testing :
 
 - Navigation bar :

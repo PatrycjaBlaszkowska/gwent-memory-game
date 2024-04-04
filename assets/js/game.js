@@ -1,15 +1,11 @@
 //global variables
-
 const cards = document.querySelectorAll('.game-card');
 let scoreStr = document.querySelector("#score");
-let flipsStr = document.querySelector("#flips");
+let score = parseInt(scoreStr.innerHTML);
 
 let firstCard, secondCard;
 let hasFlipped = false;
 let lockCards = false;
-
-let score = 0;
-let flips = 0;
 
 /**
  * This function flips a card and 
@@ -60,6 +56,8 @@ const shuffleCards = () => {
  * flips a pair of cards.
  */
 const increaseFlips = () => {
+  let flipsStr = document.querySelector("#flips");
+  let flips = parseInt(flipsStr.innerHTML);
   flips += 1;
   flipsStr.innerText = flips;
 };
@@ -146,6 +144,7 @@ if (typeof module === 'object') {
     flipCard,
     startCountdown,
     increaseScore,
+    increaseFlips,
     unflipCards,
   };
 }

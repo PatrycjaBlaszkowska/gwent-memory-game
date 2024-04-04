@@ -10,15 +10,17 @@ beforeAll(() => {
   document.close();
 });
 
+const {flipCard,startCountdown,unflipCards,increaseScore,increaseFlips} = require("../game");
+
+//jest variables
 const { urlToHttpOptions } = require("url");
-const {flipCard,startCountdown,unflipCards} = require("../game");
 const { TestEnvironment } = require("jest-environment-jsdom");
 const { hasUncaughtExceptionCaptureCallback } = require("process");
 const { createDecipheriv } = require("crypto");
 const { time } = require("console");
 const element = document.querySelector("#elementId");
 
-//variables required to proceed with testing
+//variables required to proceed with testing unflip function
 const firstCard = document.createElement("div");
 firstCard.classList.add("flip");
 const secondCard = document.createElement("div");
@@ -28,11 +30,23 @@ describe("game page works correctly", () => {
   test("game heading exist", () => {
     expect(document.getElementById("game-heading")).toBeTruthy()
   });
-  test("timer to works propery", () => {
+  test("timer works propery", () => {
       startCountdown();
       setTimeout(() => {
         expect(timer.innerHTML).toBe(59);
       }, "1000")
+  });
+  test("score gets updated properly", () => {
+    increaseScore();
+   setTimeout(() => {
+    expect(score.innerHTML).toBe("1");
+   }, "1000")
+  });
+  test("flip counter gets updated properly", () =>{
+    increaseFlips();
+    setTimeout(() => {
+      expect(flips.innerHTML).toBe("1");
+     }, "1000")
   });
 });
 
@@ -51,7 +65,6 @@ describe("flipCard and unflipCards functions work properly", () => {
   }, "1000")
   });
 });
-
 
 //home page tests//
 
