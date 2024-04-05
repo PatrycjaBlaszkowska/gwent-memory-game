@@ -28,25 +28,25 @@ secondCard.classList.add("flip");
 
 describe("game page works correctly", () => {
   test("game heading exist", () => {
-    expect(document.getElementById("game-heading")).toBeTruthy()
+    expect(document.getElementById("game-heading")).toBeTruthy();
   });
   test("timer works propery", () => {
       startCountdown();
       setTimeout(() => {
         expect(timer.innerHTML).toBe(59);
-      }, "1000")
+      }, "1000");
   });
   test("score gets updated properly", () => {
     increaseScore();
    setTimeout(() => {
     expect(score.innerHTML).toBe("1");
-   }, "1000")
+   }, "1000");
   });
   test("flip counter gets updated properly", () =>{
     increaseFlips();
     setTimeout(() => {
       expect(flips.innerHTML).toBe("1");
-     }, "1000")
+     }, "1000");
   });
 });
 
@@ -62,7 +62,7 @@ describe("flipCard and unflipCards functions work properly", () => {
     setTimeout(() => {
     expect(firstCard.classList.contains("flip")).toBe(false);
     expect(secondCard.classList.contains("flip")).toBe(false);
-  }, "1000")
+  }, "1000");
   });
 });
 
@@ -70,13 +70,13 @@ describe("flipCard and unflipCards functions work properly", () => {
 
 describe("home page works properly", () => {
   test("home page heading to exist", () => {
-    expect(document.getElementsByClassName("main-heading")).toBeTruthy() 
+    expect(document.getElementsByClassName("main-heading")).toBeTruthy(); 
   });
   test("play button to exist", () => {
-    expect(document.getElementsByClassName("play-btn")).toBeTruthy()
+    expect(document.getElementsByClassName("play-btn")).toBeTruthy();
   });
   test("leadearboard button to exist", () => {
-    expect(document.getElementsByClassName("leaderboard-btn")).toBeTruthy()
+    expect(document.getElementsByClassName("leaderboard-btn")).toBeTruthy();
   });
 });
 
@@ -84,9 +84,9 @@ describe("home page works properly", () => {
 
 describe("leaderboard page works properly", () => {
   test("leaderboard page heading to exist", () => {
-    expect(document.getElementsByClassName("leaderboard-heading")).toBeTruthy()
+    expect(document.getElementsByClassName("leaderboard-heading")).toBeTruthy();
   });
   test("best scores to exist", () => {
-    expect(document.getElementsByClassName("best-score")).toBeTruthy()
-  })
+    expect(document.getElementsByClassName("best-score")).toBeTruthy();
+  });
 });
