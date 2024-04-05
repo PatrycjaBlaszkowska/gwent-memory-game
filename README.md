@@ -11,7 +11,7 @@ Welcome to my second project,part of the Code Institute Full Stack Development C
 The Gwent Memory Game is a online card game inspired by Witcher's universe.
 
 The user is able to navigate through the website using a fully responsive navigation bar and buttons.
-The user can see the leadboard, including the best scores, as well as save their own after the game is over.
+The user can see the leaderboard, including the best scores, as well as save their own after the game is over.
 The game is over when the player matches all 8 pairs of cards, or after 60 seconds.
 
 ### Thank you for visiting Gwent Memory Game!
